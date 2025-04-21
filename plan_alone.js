@@ -23,7 +23,7 @@ function region() {
         case 'Southwest':
             regionName = 'Югозападна България';
             break;
-        case 'Southwest':
+        case 'Southeast':
             regionName = 'Югоизточна България';
             break;
     }
