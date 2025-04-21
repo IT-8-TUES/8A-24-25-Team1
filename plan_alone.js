@@ -9,11 +9,10 @@ function holidayTime() {
     return difference;
 }
 
-document.getElementById('region').addEventListener('change', region);
-
 function region() {
-    let selectedRegion = '';
     let regionName = '';
+    let selectedRegion = document.getElementById('region').value;
+
     switch(selectedRegion) {
         case 'Northwest':
             regionName = 'Северозападна България';
@@ -29,7 +28,7 @@ function region() {
             break;
     }
 
-    console.log(regionName);
+    console.log(regionName)
 
     document.getElementById('excursion-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
 };

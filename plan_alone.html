@@ -22,24 +22,16 @@
             <input placeholder="Начална дата(dd.mm.yyyy)" type="date" id="start-date">
             <p> - </p>
             <input placeholder="Крайна дата(dd.mm.yyyy)" type="date" id="end-date">
+
     </div>
     <div class="enter-region">
         <p>Регион:</p>
         <select id="region" >
-            <option value = "" onchange="
-                selectedRegion = '';" disabled selected hidden>Изберете регион</option>
-            <option value="Northwest" onchange="
-                selectedRegion = 'Northwest';
-            ">Северозападна България</option>
-            <option value="Northeast" onchange="
-                selectedRegion = 'Northeast';
-            ">Североизточна България</option>
-            <option value="Southwest" onchange="
-                selectedRegion = 'Southwest';
-            ">Югозападна България</option>
-            <option value="Southeast" onchange="
-                selectedRegion = 'Southwest';
-            ">Югоизточна България</option>
+            <option value = "" disabled selected hidden>Изберете регион</option>
+            <option value="Northwest"     >Северозападна България</option>
+            <option value="Northeast" >Североизточна България</option>
+            <option value="Southwest">Югозападна България</option>
+            <option value="Southeast">Югоизточна България</option>
         </select>
         <button onclick = "
             holidayTime();        
