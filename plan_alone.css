@@ -1,4 +1,4 @@
-.enter_date {
+.enter-date {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
     gap: 10px;
 }
 
-.enter_region {
+.enter-region {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;

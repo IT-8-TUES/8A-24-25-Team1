@@ -17,19 +17,17 @@
         </nav>
     </div>
     <br>
-    <div class="enter_date">
+    <div class="enter-date">
             <p>Дата:</p>
             <input placeholder="Начална дата(dd.mm.yyyy)" type="date" id="start-date">
             <p> - </p>
             <input placeholder="Крайна дата(dd.mm.yyyy)" type="date" id="end-date">
-            <button onclick = "
-                holidayTime();
-            ">Потвърди</button>
-            <p id="days_holiday"></p>
     </div>
-    <div class="enter_region">
+    <div class="enter-region">
         <p>Регион:</p>
-        <select id="region">
+        <select id="region" >
+            <option value = "" onchange="
+                selectedRegion = '';" disabled selected hidden>Изберете регион</option>
             <option value="Northwest" onchange="
                 selectedRegion = 'Northwest';
             ">Северозападна България</option>
@@ -43,6 +41,13 @@
                 selectedRegion = 'Southwest';
             ">Югоизточна България</option>
         </select>
+        <button onclick = "
+            holidayTime();        
+            region();
+            ">Потвърди</button>
+    </div>
+    <div class = "planning-trip">
+        <h1 id="excursion-name"></h1>
     </div>
     <script src="plan_alone.js"></script>
 </body>
