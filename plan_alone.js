@@ -1,9 +1,13 @@
 
 function holidayTime() {
-    let startDate = document.querySelector('#start-date');
-    let endDate = document.querySelector('#end-date');
+    let startDate = new Date(document.querySelector('#start-date').value);
+    let endDate = new Date(document.querySelector('#end-date').value);
+    console.log(startDate);
+    console.log(endDate);
 
-    
+    difference = endDate - startDate;
+    console.log(difference);
+
 }
 
 
