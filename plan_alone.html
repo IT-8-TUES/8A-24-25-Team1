@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="plan_alone.css">
+    <title>Планирай сам</title>
+</head>
+<body>
+    <div class="menu">
+        <h1>Планирай сам</h1>
+        <nav>
+            <a href="#">#</a>
+            <a href="#">#</a>
+            <a href="#">#</a>
+        </nav>
+    </div>
+    <br>
+    <div class="enter-date">
+            <p>Дата:</p>
+            <input placeholder="Начална дата(dd.mm.yyyy)" type="date" id="start-date">
+            <p> - </p>
+            <input placeholder="Крайна дата(dd.mm.yyyy)" type="date" id="end-date">
+
+    </div>
+    <div class="enter-region">
+        <p>Регион:</p>
+        <select id="region" >
+            <option value = "" disabled selected hidden>Изберете регион</option>
+            <option value="Northwest"     >Северозападна България</option>
+            <option value="Northeast" >Североизточна България</option>
+            <option value="Southwest">Югозападна България</option>
+            <option value="Southeast">Югоизточна България</option>
+        </select>
+        <button onclick = "
+            holidayTime();        
+            region();
+            ">Потвърди</button>
+    </div>
+    <div class = "planning-trip">
+        <h1 id="excursion-name"></h1>
+    </div>
+    <script src="plan_alone.js"></script>
+</body>
+</html>
