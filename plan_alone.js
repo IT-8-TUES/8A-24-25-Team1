@@ -1,5 +1,4 @@
 document.getElementById('region').addEventListener('change', region);
-
 function region() {
     let selectedRegion = '';
 
@@ -13,7 +12,4 @@ function region() {
         case 'Southwest':
             break;
     }
-
-    console.log(selectedRegion);
-
 };
