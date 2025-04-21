@@ -1,3 +1,13 @@
+
+function holidayTime() {
+    let startDate = document.querySelector('#start-date');
+    let endDate = document.querySelector('#end-date');
+
+    
+}
+
+
+
 document.getElementById('region').addEventListener('change', region);
 function region() {
     let selectedRegion = '';
