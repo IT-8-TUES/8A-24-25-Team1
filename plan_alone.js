@@ -5,7 +5,7 @@ function holidayTime() {
     let endDate = new Date(document.querySelector('#end-date').value);
 
     
-    difference = (endDate - startDate) / (1000 * 60 * 60 * 24);
+    difference = 1 + ((endDate - startDate) / (1000 * 60 * 60 * 24));
     if(difference > 10 || difference < 1) {
         alert('Почивката тябва да е най-малко 1 ден и най-много 10 дена');
         difference = 0;
