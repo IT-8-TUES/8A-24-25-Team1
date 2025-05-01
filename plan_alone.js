@@ -39,13 +39,16 @@ function region() {
     console.log(regionName);
     if(difference > 0 && regionName !== null) {
         document.getElementById('excursion-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
+        showingDays();
     }
+
+    
 }
 
-function planning() {
+function showingDays() {
     let i = 1;
 
-    for(i = 1, j = 1; i <= difference; i++, j = 0 ) {
-        document.querySelector(`#sight${i}`)
+    for(i = 1; i <= difference; i++) {
+        document.getElementById(`day${i}`).style.display = "block";
     }
 }
