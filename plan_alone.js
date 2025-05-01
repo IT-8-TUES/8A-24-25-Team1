@@ -41,3 +41,11 @@ function region() {
         document.getElementById('excursion-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
     }
 }
+
+function planning() {
+    let i = 1;
+
+    for(i = 1, j = 1; i <= difference; i++, j = 0 ) {
+        document.querySelector(`#sight${i}`)
+    }
+}
