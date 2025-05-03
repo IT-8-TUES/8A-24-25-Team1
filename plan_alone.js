@@ -1,18 +1,20 @@
 let difference = 0;
-
+// Функция за изчисляване на дните почивка
 function holidayTime() {
     let startDate = new Date(document.querySelector('#start-date').value);
     let endDate = new Date(document.querySelector('#end-date').value);
 
     
     difference = 1 + ((endDate - startDate) / (1000 * 60 * 60 * 24));
+
     if(difference > 10 || difference < 1) {
         alert('Почивката тябва да е най-малко 1 ден и най-много 10 дена');
         difference = 0;
     }
+
     return difference;
 }
-
+// Функция за определяне на региона и извеждане на името на екскурзията
 function region() {
     let regionName = '';
     let selectedRegion = document.getElementById('region').value;
@@ -36,14 +38,16 @@ function region() {
             break;
     }
 
-    console.log(regionName);
     if(difference > 0 && regionName !== null) {
         document.getElementById('excursion-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
         showingDays();
+        towns(regionName);
+        namingDays();
     }
 
-    
 }
+
+// Функция за показване на елемнтите - дни
 
 function showingDays() {
     let i = 1;
@@ -52,15 +56,51 @@ function showingDays() {
         document.getElementById(`day${i}`).style.display = "block";
     }
     
-    selectingSights();
 }
 
-function selectingSights() {
-    let i;
+let town1 = '', town2 = '', town3 = '', town4 = '', town5 = '';
 
-    for(i = 1; i <= difference; i++) {
-        document.getElementById(`day${i}`).style.display = "block";
-        document.getElementById('excursion-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
-        showingDays();
+// Функция за определяне на градовете спрямо региона
+
+function towns(regionName) {
+    switch(regionName) {
+        case 'Северозападна България':
+            town1 = 'Видин';
+            town2 = 'Белоградчик';
+            town3 = 'Берковица';
+            town4 = 'Чипровци';
+            town5 = 'Козлодуй';
+            break;
+        case 'Североизточна България':
+            town1 = 'Шумен';
+            town2 = 'Варна';
+            town3 = 'Велико Търново';
+            town4 = 'Силистра';
+            town5 = 'Добрич';
+            break;
+        case 'Югозападна България':
+            town1 = 'Мелник';
+            town2 = 'Банско';
+            town3 = 'Сандански';
+            town4 = 'Кюстендил';
+            town5 = 'София';
+            break;
+        case 'Югоизточна България':
+            town1 = 'Бургас';
+            town2 = 'Стара Загора';
+            town3 = 'Ямбол';
+            town4 = 'Сливен';
+            town5 = 'Несебър';
+            break;
     }
+}
+
+// Функция за именуване на дните
+
+function namingDays() {
+    document.getElementById('day1-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
+    if(difference > 5) {
+        document.getElementById('day2-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
+    }
+    else 
 }
