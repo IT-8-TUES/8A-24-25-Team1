@@ -51,4 +51,16 @@ function showingDays() {
     for(i = 1; i <= difference; i++) {
         document.getElementById(`day${i}`).style.display = "block";
     }
+    
+    selectingSights();
+}
+
+function selectingSights() {
+    let i;
+
+    for(i = 1; i <= difference; i++) {
+        document.getElementById(`day${i}`).style.display = "block";
+        document.getElementById('excursion-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
+        showingDays();
+    }
 }
