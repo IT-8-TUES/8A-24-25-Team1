@@ -5,7 +5,7 @@ function holidayTime() {
     let endDate = new Date(document.querySelector('#end-date').value);
 
     
-    difference = 1 + ((endDate - startDate) / (1000 * 60 * 60 * 24));
+    difference = (endDate - startDate) / (1000 * 60 * 60 * 24);
 
     if(difference > 10 || difference < 1) {
         alert('Почивката тябва да е най-малко 1 ден и най-много 10 дена');
@@ -87,7 +87,7 @@ function towns(regionName) {
         case 'Югоизточна България':
             town1 = 'Бургас';
             town2 = 'Стара Загора';
-            town3 = 'Ямбол';
+            town3 = 'Хасково';
             town4 = 'Сливен';
             town5 = 'Несебър';
             break;
@@ -97,44 +97,44 @@ function towns(regionName) {
 // Функция за именуване на дните
 
 function namingDays() {
-    document.getElementById('day1-name').innerText = `Ден1 - ${town1}`;
+    document.getElementById('day1-name').innerText = `Ден 1 - ${town1}`;
     if(difference > 5) {
-        document.getElementById('day2-name').innerText = `Ден2 - ${town1}`;
-        document.getElementById('day3-name').innerText = `Ден3 - ${town2}`;
+        document.getElementById('day2-name').innerText = `Ден 2 - ${town1}`;
+        document.getElementById('day3-name').innerText = `Ден 3 - ${town2}`;
         if(difference > 6) {
-            document.getElementById('day4-name').innerText = `Ден4 - ${town2}`;
-            document.getElementById('day5-name').innerText = `Ден5 - ${town3}`;
+            document.getElementById('day4-name').innerText = `Ден 4 - ${town2}`;
+            document.getElementById('day5-name').innerText = `Ден 5 - ${town3}`;
             if(difference > 7) {
-                document.getElementById('day6-name').innerText = `Ден6 - ${town3}`;
-                document.getElementById('day7-name').innerText = `Ден7 - ${town4}`;
+                document.getElementById('day6-name').innerText = `Ден 6 - ${town3}`;
+                document.getElementById('day7-name').innerText = `Ден 7 - ${town4}`;
                 if(difference > 8) {
-                    document.getElementById('day8-name').innerText = `Ден8 - ${town4}`;
-                    document.getElementById('day9-name').innerText = `Ден9 - ${town5}`;
+                    document.getElementById('day8-name').innerText = `Ден 8 - ${town4}`;
+                    document.getElementById('day9-name').innerText = `Ден 9 - ${town5}`;
                     if(difference > 9) {
-                        document.getElementById('day1-name').innerText = `Ден10 - ${town5}`;
+                        document.getElementById('day10-name').innerText = `Ден 10 - ${town5}`;
                     }
                 }
                 else {
-                    document.getElementById('day8-name').innerText = `Ден8 - ${town5}`;
+                    document.getElementById('day8-name').innerText = `Ден 8 - ${town5}`;
                 }
             }
             else {
-                document.getElementById('day6-name').innerText = `Ден5 - ${town4}`;
-                document.getElementById('day7-name').innerText = `Ден6 - ${town5}`;
+                document.getElementById('day6-name').innerText = `Ден 5 - ${town4}`;
+                document.getElementById('day7-name').innerText = `Ден 6- ${town5}`;
             }
         }
         else {
-            document.getElementById('day4-name').innerText = `Ден4 - ${town3}`;
-            document.getElementById('day5-name').innerText = `Ден5 - ${town4}`;
-            document.getElementById('day5-name').innerText = `Ден6 - ${town5}`;
+            document.getElementById('day4-name').innerText = `Ден 4 - ${town3}`;
+            document.getElementById('day5-name').innerText = `Ден 5 - ${town4}`;
+            document.getElementById('day6-name').innerText = `Ден 6 - ${town5}`;
         }
         
     }
     else {
-        document.getElementById('day2-name').innerText = `Ден2 - ${town2}`;
-        document.getElementById('day3-name').innerText = `Ден3 - ${town3}`;
-        document.getElementById('day4-name').innerText = `Ден4 - ${town4}`;
-        document.getElementById('day5-name').innerText = `Ден5 - ${town5}`;
+        document.getElementById('day2-name').innerText = `Ден 2 - ${town2}`;
+        document.getElementById('day3-name').innerText = `Ден 3 - ${town3}`;
+        document.getElementById('day4-name').innerText = `Ден 4 - ${town4}`;
+        document.getElementById('day5-name').innerText = `Ден 5 - ${town5}`;
     }
 
    
