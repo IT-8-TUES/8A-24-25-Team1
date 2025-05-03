@@ -111,7 +111,7 @@ function namingDays() {
                     document.getElementById('day8-name').innerText = `Ден8 - ${town4}`;
                     document.getElementById('day9-name').innerText = `Ден9 - ${town5}`;
                     if(difference > 9) {
-                        document.getElementById('day10-name').innerText = `Ден10 - ${town5}`;
+                        document.getElementById('day1-name').innerText = `Ден10 - ${town5}`;
                     }
                 }
                 else {
@@ -119,8 +119,8 @@ function namingDays() {
                 }
             }
             else {
-                document.getElementById('day6-name').innerText = `Ден6 - ${town4}`;
-                document.getElementById('day7-name').innerText = `Ден7 - ${town5}`;
+                document.getElementById('day6-name').innerText = `Ден5 - ${town4}`;
+                document.getElementById('day7-name').innerText = `Ден6 - ${town5}`;
             }
         }
         else {
