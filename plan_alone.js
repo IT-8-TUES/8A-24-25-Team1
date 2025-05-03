@@ -46,7 +46,6 @@ function region() {
     }
 
 }
-
 // Функция за показване на елемнтите - дни
 
 function showingDays() {
@@ -98,9 +97,48 @@ function towns(regionName) {
 // Функция за именуване на дните
 
 function namingDays() {
-    document.getElementById('day1-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
+    document.getElementById('day1-name').innerText = `Ден1 - ${town1}`;
     if(difference > 5) {
-        document.getElementById('day2-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
+        document.getElementById('day2-name').innerText = `Ден2 - ${town1}`;
+        document.getElementById('day3-name').innerText = `Ден3 - ${town2}`;
+        if(difference > 6) {
+            document.getElementById('day4-name').innerText = `Ден4 - ${town2}`;
+            document.getElementById('day5-name').innerText = `Ден5 - ${town3}`;
+            if(difference > 7) {
+                document.getElementById('day6-name').innerText = `Ден6 - ${town3}`;
+                document.getElementById('day7-name').innerText = `Ден7 - ${town4}`;
+                if(difference > 8) {
+                    document.getElementById('day8-name').innerText = `Ден8 - ${town4}`;
+                    document.getElementById('day9-name').innerText = `Ден9 - ${town5}`;
+                    if(difference > 9) {
+                        document.getElementById('day10-name').innerText = `Ден10 - ${town5}`;
+                    }
+                }
+                else {
+                    document.getElementById('day8-name').innerText = `Ден8 - ${town5}`;
+                }
+            }
+            else {
+                document.getElementById('day6-name').innerText = `Ден6 - ${town4}`;
+                document.getElementById('day7-name').innerText = `Ден7 - ${town5}`;
+            }
+        }
+        else {
+            document.getElementById('day4-name').innerText = `Ден4 - ${town3}`;
+            document.getElementById('day5-name').innerText = `Ден5 - ${town4}`;
+            document.getElementById('day5-name').innerText = `Ден6 - ${town5}`;
+        }
+        
     }
-    else 
+    else {
+        document.getElementById('day2-name').innerText = `Ден2 - ${town2}`;
+        document.getElementById('day3-name').innerText = `Ден3 - ${town3}`;
+        document.getElementById('day4-name').innerText = `Ден4 - ${town4}`;
+        document.getElementById('day5-name').innerText = `Ден5 - ${town5}`;
+    }
+
+   
+
+    
+    
 }
