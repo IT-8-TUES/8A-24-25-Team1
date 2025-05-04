@@ -3,17 +3,22 @@ function regionSelect() {
     var output = document.getElementById("textContent");
     var tripList = document.getElementById("tripList");
 
-    var startDateRaw = document.getElementById("start-date").value;
-    var endDateRaw = document.getElementById("end-date").value;
+    var startDate = document.getElementById("start-date").value;
+    var endDate = document.getElementById("end-date").value;
 
-    function formatInputDate(dateString) {
-        if (!dateString) return null;
+    function formatDate(dateString) {
         let [year, month, day] = dateString.split("-");
-        return `${day}.${month}.${year}`;
+        return `${day}.${month}.${year} г.`;
     }
 
-    let startDate = formatInputDate(startDateRaw);
-    let endDate = formatInputDate(endDateRaw);
+    output.textContent = "";
+
+    // ✅ Check if a region is selected
+    if (!region) {
+        output.textContent = "⚠️ Моля, въведете регион.";
+        tripList.innerHTML = "";
+        return;
+    }
 
     if (!startDate) {
         output.textContent = "⚠️ Моля, въведете начална дата.";
@@ -21,13 +26,13 @@ function regionSelect() {
         return;
     }
 
-    if (endDate && startDateRaw > endDateRaw) {
-        output.textContent = "❌ Грешка: Крайната дата не може да бъде преди началната!";
+    if (endDate && startDate > endDate) {
+        output.textContent = "❌ Грешка: Крайната дата трябва да бъде след началната!";
         tripList.innerHTML = "";
         return;
     }
 
-    if (startDateRaw === endDateRaw) {
+    if (endDate && startDate === endDate) {
         output.textContent = "⚠️ Грешка: Началната и крайната дата не могат да бъдат еднакви!";
         tripList.innerHTML = "";
         return;
@@ -35,64 +40,40 @@ function regionSelect() {
 
     let trips = {
         "Northwest": [
-            { name: "Екскурзия 1", page: "excursion1.html", period: 4, dates: ["2025-05-03 - 2025-05-07", "2025-05-15 - 2025-05-19", "2025-06-10 - 2025-06-14"] }
+            { name: "Екскурзия 1", page: "excursion1.html", period: 3, dates: ["2025-05-12 - 2025-05-15", "2025-05-27 - 2025-05-30", "2025-06-05 - 2025-06-08"] }
         ],
         "Northeast": [
-            { name: "Екскурзия 2", page: "excursion2.html", period: 3, dates: ["2025-05-08 - 2025-05-11", "2025-05-20 - 2025-05-23", "2025-06-15 - 2025-06-18"] },
-            { name: "Екскурзия 3", page: "excursion3.html", period: 7, dates: ["2025-05-12 - 2025-05-19", "2025-05-25 - 2025-06-01", "2025-06-20 - 2025-06-27"] }
+            { name: "Екскурзия 2", page: "excursion2.html", period: 4, dates: ["2025-05-14 - 2025-05-18", "2025-05-29 - 2025-06-02", "2025-06-07 - 2025-06-11"] },
+            { name: "Екскурзия 3", page: "excursion3.html", period: 7, dates: ["2025-05-16 - 2025-05-23", "2025-05-30 - 2025-06-06", "2025-06-09 - 2025-06-16"] }
         ],
         "Southwest": [
-            { name: "Екскурзия 4", page: "excursion4.html", period: 5, dates: ["2025-05-07 - 2025-05-12", "2025-05-19 - 2025-05-24", "2025-06-13 - 2025-06-18"] },
-            { name: "Екскурзия 5", page: "excursion5.html", period: 6, dates: ["2025-05-14 - 2025-05-20", "2025-05-27 - 2025-06-02", "2025-06-19 - 2025-06-25"] }
+            { name: "Екскурзия 4", page: "excursion4.html", period: 5, dates: ["2025-05-17 - 2025-05-22", "2025-05-31 - 2025-06-05", "2025-06-10 - 2025-06-15"] },
+            { name: "Екскурзия 5", page: "excursion5.html", period: 6, dates: ["2025-05-19 - 2025-05-25", "2025-06-02 - 2025-06-08", "2025-06-12 - 2025-06-18"] }
         ],
         "Southeast": [
-            { name: "Екскурзия 6", page: "excursion6.html", period: 3, dates: ["2025-05-10 - 2025-05-13", "2025-05-22 - 2025-05-25", "2025-06-16 - 2025-06-19"] }
+            { name: "Екскурзия 6", page: "excursion6.html", period: 3, dates: ["2025-05-20 - 2025-05-23", "2025-06-03 - 2025-06-06", "2025-06-14 - 2025-06-17"] }
         ]
     };
 
-    if (!trips[region]) {
-        output.textContent = "⚠️ Моля, изберете регион.";
-        tripList.innerHTML = "";
-        return;
-    }
-
-    let filteredTrips = trips[region].filter(trip => {
-        return trip.dates.some(dateRange => {
+    let filteredTrips = trips[region]?.filter(trip =>
+        trip.dates.some(dateRange => {
             let [tripStart, tripEnd] = dateRange.split(" - ");
-            return (startDateRaw <= tripStart && endDateRaw >= tripEnd) || startDateRaw === tripStart;
-        });
-    });
+            return (!endDate || (startDate <= tripEnd && endDate >= tripStart));
+        })
+    ) || [];
 
-    let listHTML = "";
-    if (filteredTrips.length > 0) {
-        filteredTrips.forEach(trip => {
-            listHTML += `
-                <div>
-                    <strong>${trip.name} - ${trip.period} дни:</strong><br>
-                    ${trip.dates.map(date => {
-                        let [tripStart, tripEnd] = date.split(" - ");
-                        let formattedDate = `от ${formatInputDate(tripStart)} г. до ${formatInputDate(tripEnd)} г.`;
-                        return `<div style="margin-left: 15px;">🗓️ ${formattedDate}</div>`;
-                    }).join("")}
-                    <button onclick="window.location.href='${trip.page}'">📖 Прочети повече</button>
-                </div><br>`;
-        });
-    } else {
-        listHTML = "<div>❌ Няма екскурзии на тези дати.</div><br>";
-        trips[region].forEach(trip => {
-            listHTML += `
-                <div>
-                    <strong>${trip.name} - ${trip.period} дни:</strong><br>
-                    ${trip.dates.map(date => {
-                        let [tripStart, tripEnd] = date.split(" - ");
-                        let formattedDate = `от ${formatInputDate(tripStart)} г. до ${formatInputDate(tripEnd)} г.`;
-                        return `<div style="margin-left: 15px;">🗓️ ${formattedDate}</div>`;
-                    }).join("")}
-                    <button onclick="window.location.href='${trip.page}'">📖 Прочети повече</button>
-                </div><br>`;
-        });
-    }
+    output.textContent = filteredTrips.length > 0 
+        ? `✅ Препоръчани екскурзии за ${region}:`
+        : "❌ Няма екскурзии на тези дати. Ето всички екскурзии за този регион:";
 
-    output.textContent = `✅ Препоръчани екскурзии за ${region}:`;
-    tripList.innerHTML = listHTML;
+    tripList.innerHTML = (filteredTrips.length > 0 ? filteredTrips : trips[region]).map(trip => `
+        <div>
+            <strong>${trip.name} - ${trip.period} дни:</strong><br>
+            ${trip.dates.map(date => {
+                let [tripStart, tripEnd] = date.split(" - ");
+                return `<div>🗓️ от ${formatDate(tripStart)} до ${formatDate(tripEnd)}</div>`;
+            }).join("")}
+            <button onclick="window.location.href='${trip.page}'">📖 Прочети повече</button>
+        </div><br>`
+    ).join("");
 }
