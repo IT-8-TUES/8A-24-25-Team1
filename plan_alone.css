@@ -1,21 +1,52 @@
-.enter-date {
-    display:flex;
+#date-label {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-}
+    align-content: center;
+    gap:10%;
+    margin:4px;
+} 
 
-.enter-region {
-    display:flex;
+#input-date {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    align-content: center;
+    gap:8.5%;
+    margin:4px;
 }
 
 .day {
     display: none;
+}
+
+.enter-region {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 4px;
+}
+
+#region {
+    display: flex;
+    margin: 4px 4px 4px 0;
+}
+
+button {
+    background-color: #3f635d;
+    color:whitesmoke;
+    border: none;
+    padding: 5px;
+
+}
+
+button:hover {
+    background-color: #2e4742;
 }
