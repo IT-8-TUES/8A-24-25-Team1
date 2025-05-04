@@ -1,23 +1,45 @@
-#date-label {
+.enter-date {
     display: flex;
-    flex-direction: row;
+    flex-direction: rown;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
-    align-content: center;
     gap:10%;
+
+}
+
+#start-date {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap:8.5%;
     margin:4px;
 } 
 
-#input-date {
+#end-date {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
     gap:8.5%;
     margin:4px;
+}
+
+
+/*Hover на дните*/
+.flatpickr-day:hover {
+    background-color: #7a8d8a !important;
+    transition: 1s;
+    color:whitesmoke !important;
+  }
+
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg {
+fill: #3f635d !important;
 }
 
 .day {

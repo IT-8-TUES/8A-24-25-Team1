@@ -1,8 +1,8 @@
 let difference = 0;
 // Функция за изчисляване на дните почивка
 function holidayTime() {
-    let startDate = new Date(document.querySelector('#start-date').value);
-    let endDate = new Date(document.querySelector('#end-date').value);
+    let startDate = new Date(document.querySelector('#start-date-input').value);
+    let endDate = new Date(document.querySelector('#end-date-input').value);
 
     
     difference = (endDate - startDate) / (1000 * 60 * 60 * 24);
