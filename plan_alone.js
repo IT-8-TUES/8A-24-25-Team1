@@ -42,6 +42,7 @@ function region() {
         document.getElementById('excursion-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
         showingDays();
         towns(regionName);
+        selectorTowns();
      //   namingDays();
     }
 
@@ -54,6 +55,7 @@ function showingDays() {
     for(i = 1; i <= difference; i++) {
         document.getElementById(`day${i}`).style.display = "block";
     }
+
     
 }
 
@@ -94,6 +96,9 @@ function towns(regionName) {
     }
 }
 
+function selectorTowns() {
+    
+}
 /* Функция за именуване на дните
 
 function namingDays() {
