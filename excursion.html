@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Екскурзия</title>
     <link rel="stylesheet" href="excursion.css">
+    <script src="gallery.js" defer></script>
 </head>
 <body>
     <div class="menu">
-        <h1>Екскурзия</h1>
+        <h1>Име на екскурзия</h1>
+        <nav>
+            <a href="#">#</a>
+            <a href="#">#</a>
+            <a href="#">#</a>
+        </nav> 
     </div>
 
     <div class="trip-container">
@@ -19,6 +25,12 @@
         <p>Цена: <span id="price">---</span></p>
 
         <button id="bookTrip">Резервирай</button>
+
+        <div class="image-gallery">
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <img id="galleryImage" src="Images/Image1.jpg" alt="Снимки от екскурзията">
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
 
         <div class="trip-info">
             <h3>Информация за екскурзията:</h3>
