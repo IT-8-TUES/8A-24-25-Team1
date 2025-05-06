@@ -41,9 +41,19 @@ nav a:hover {
   background-color: forestgreen;
 }
 
-img {
-  max-width: 80%;
+
+.map-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.map-table td {
+  padding: 0em;
+  margin: 0em;
+}
+
+.map-table img {
+  width: 100%;
   height: auto;
-  margin: 0 auto;
   display: block;
 }
