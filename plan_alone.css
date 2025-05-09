@@ -58,13 +58,32 @@ input::placeholder {
 
 .flatpickr-day.selected {
     background-color: #7a8d8a !important;
+    border: #2e4742;
     color:whitesmoke !important;
 }
+
 
 /*Стрелките за преместване на минал или на следващ месец*/
 .flatpickr-prev-month svg,
 .flatpickr-next-month svg {
 fill: #3f635d !important;
+}
+.flatpickr-day.selected {
+    background-color: #7a8d8a !important;
+    border: #2e4742 !important;
+    color:whitesmoke !important;
+}
+
+.flatpickr-monthDropdown-months {
+    box-shadow: none;
+}
+
+.flatpickr-monthDropdown-month {
+    background-color: white !important;
+}
+
+.flatpickr-current-month input.cur-year {
+    box-shadow: none;
 }
 
 .day {
@@ -84,6 +103,26 @@ fill: #3f635d !important;
 #region {
     display: flex;
     margin: 4px 4px 4px 0;
+}
+
+
+select {
+    border:none;
+    appearance: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+    box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.558);
+    margin: 10px 0 10px 0;
+}
+
+option {
+    background-color: white;
+    max-width: fit-content ;
+    padding: 10px;
+    width: 250px;
 }
 
 button {

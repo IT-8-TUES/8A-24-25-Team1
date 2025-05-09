@@ -218,7 +218,7 @@ function defineSights(selectorTownValue) {
 }
 
 let dayNum = 0;
-
+// Функция за показване на забележителностите
 function displaySights(dayNum) {
     let selectorTownValue = document.querySelector(`#day${dayNum}-town`).value;
     defineSights(selectorTownValue);
