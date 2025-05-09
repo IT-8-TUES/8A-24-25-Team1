@@ -52,20 +52,24 @@
         <div id="day1" class = "day">
                 <p>Ден 1</p>
                 <label>Град: </label>
-                <select id="day1-town">
-                    <option value = "" disabled selected hidden>Изберете град</option>
+                <select id="day1-town"  onchange = "
+                    displaySights(1);
+
+                ">
+                    <option value = "" disabled selected hidden>Изберете град</option >
                     <option value="town1" class = "town-option1"></option>
                     <option value="town2" class = "town-option2"></option>
                     <option value="town3" class = "town-option3"></option>
-                   
+                    <option value="town4" class = "town-option4"></option>
+                    <option value="town5" class = "town-option5"></option>
                 </select>
             <br>
             <label>Забележителност:</label>
-            <select id="day1-sight1">
+            <select id="day1-sights">
                 <option value = "" disabled selected hidden>Изберете забележителност</option>
-                <option value="sight1"></option>
-                <option value="sight2"></option>
-                <option value="sight3"></option>
+                <option value="sight1" id = "day1-sight1"></option>
+                <option value="sight2" id = "day1-sight2"></option>
+                <option value="sight3" id = "day1-sight3"></option>
             </select>
             <button id = "add-button1" onclick = "
 
@@ -74,193 +78,236 @@
         <div id="day2" class = "day">
             <p>Ден 2</p>
             <label>Град: </label>
-            <select id="day2-town">
-                <option value = "" disabled selected hidden>Изберете град</option>
-                <option value="town1" class = "town-option1"></option>
-                <option value="town2" class = "town-option2"></option>
-                <option value="town3" class = "town-option3"></option>
-            </select>
-        <br>
-        <label>Забележителност:</label>
-        <select id="day2-sight1">
-            <option value = "" disabled selected hidden>Изберете забележителност</option>
-            <option value="sight1"></option>
-            <option value="sight2"></option>
-            <option value="sight3"></option>
-        </select>
-        <button id = "add-button2" onclick = "
+            <select id="day2-town"  onchange = "
+                    displaySights(2);
 
-        ">+</button>
+                ">
+                    <option value = "" disabled selected hidden>Изберете град</option >
+                    <option value="town1" class = "town-option1"></option>
+                    <option value="town2" class = "town-option2"></option>
+                    <option value="town3" class = "town-option3"></option>
+                    <option value="town4" class = "town-option4"></option>
+                    <option value="town5" class = "town-option5"></option>
+                </select>
+            <br>
+            <label>Забележителност:</label>
+            <select id="day2-sights">
+                <option value = "" disabled selected hidden>Изберете забележителност</option>
+                <option value="sight1" id = "day2-sight1"></option>
+                <option value="sight2" id = "day2-sight2"></option>
+                <option value="sight3" id = "day2-sight3"></option>
+            </select>
+            <button id = "add-button2" onclick = "
+
+            ">+</button>
     </div>
     <div id="day3" class = "day">
         <p>Ден 3</p>
         <label>Град: </label>
-        <select id="day3-town">
-            <option value = "" disabled selected hidden>Изберете град</option>
-            <option value="town1" class = "town-option1"></option>
-            <option value="town2" class = "town-option2"></option>
-            <option value="town3" class = "town-option3"></option>
-            <option value="town4" class = "town-option4"></option>
-            <option value="town5" class = "town-option5"></option>
-        </select>
-    <br>
-    <label>Забележителност:</label>
-    <select id="day3-sight1">
-        <option value = "" disabled selected hidden>Изберете забележителност</option>
-        <option value="sight1"></option>
-        <option value="sight2"></option>
-        <option value="sight3"></option>
-    </select>
-    <button id = "add-button3" onclick = "
+        <select id="day3-town"  onchange = "
+                    displaySights(3);
 
-    ">+</button>
+                ">
+                    <option value = "" disabled selected hidden>Изберете град</option >
+                    <option value="town1" class = "town-option1"></option>
+                    <option value="town2" class = "town-option2"></option>
+                    <option value="town3" class = "town-option3"></option>
+                    <option value="town4" class = "town-option4"></option>
+                    <option value="town5" class = "town-option5"></option>
+                </select>
+            <br>
+            <label>Забележителност:</label>
+            <select id="day3-sights">
+                <option value = "" disabled selected hidden>Изберете забележителност</option>
+                <option value="sight1" id = "day3-sight1"></option>
+                <option value="sight2" id = "day3-sight2"></option>
+                <option value="sight3" id = "day3-sight3"></option>
+            </select>
+            <button id = "add-button3" onclick = "
+
+            ">+</button>
     </div>
     <div id="day4" class="day">
         <p>Ден 4</p>
         <label>Град: </label>
-        <select id="day4-town">
-            <option value="" disabled selected hidden>Изберете град</option>
-            <option value="town1" class="town-option1"></option>
-            <option value="town2" class="town-option2"></option>
-            <option value="town3" class="town-option3"></option>
-            <option value="town4" class="town-option4"></option>
-            <option value="town5" class="town-option5"></option>
-        </select>
-        <br>
-        <label>Забележителност:</label>
-        <select id="day4-sight1">
-            <option value="" disabled selected hidden>Изберете забележителност</option>
-            <option value="sight1"></option>
-            <option value="sight2"></option>
-            <option value="sight3"></option>
-        </select>
-        <button id="add-button4" onclick="">+</button>
+        <select id="day4-town"  onchange = "
+                    displaySights(4);
+
+                ">
+                    <option value = "" disabled selected hidden>Изберете град</option >
+                    <option value="town1" class = "town-option1"></option>
+                    <option value="town" class = "town-option2"></option>
+                    <option value="town3" class = "town-option3"></option>
+                    <option value="town4" class = "town-option4"></option>
+                    <option value="town5" class = "town-option5"></option>
+                </select>
+            <br>
+            <label>Забележителност:</label>
+            <select id="day4-sights">
+                <option value = "" disabled selected hidden>Изберете забележителност</option>
+                <option value="sight1" id = "day4-sight1"></option>
+                <option value="sight2" id = "day4-sight2"></option>
+                <option value="sight3" id = "day4-sight3"></option>
+            </select>
+            <button id = "add-button4" onclick = "
+
+            ">+</button>
     </div>
     <div id="day5" class="day">
         <p>Ден 5</p>
         <label>Град: </label>
-        <select id="day5-town">
-            <option value="" disabled selected hidden>Изберете град</option>
-            <option value="town1" class="town-option1"></option>
-            <option value="town2" class="town-option2"></option>
-            <option value="town3" class="town-option3"></option>
-            <option value="town4" class="town-option4"></option>
-            <option value="town5" class="town-option5"></option>
-        </select>
-        <br>
-        <label>Забележителност:</label>
-        <select id="day5-sight1">
-            <option value="" disabled selected hidden>Изберете забележителност</option>
-            <option value="sight1"></option>
-            <option value="sight2"></option>
-            <option value="sight3"></option>
-        </select>
-        <button id="add-button5" onclick="">+</button>
+        <select id="day5-town"  onchange = "
+                    displaySights(5);
+
+                ">
+                    <option value = "" disabled selected hidden>Изберете град</option >
+                    <option value="town1" class = "town-option1"></option>
+                    <option value="town2" class = "town-option2"></option>
+                    <option value="town3" class = "town-option3"></option>
+                    <option value="town4" class = "town-option4"></option>
+                    <option value="town5" class = "town-option5"></option>
+                </select>
+            <br>
+            <label>Забележителност:</label>
+            <select id="day5-sights">
+                <option value = "" disabled selected hidden>Изберете забележителност</option>
+                <option value="sight1" id = "day5-sight1"></option>
+                <option value="sight2" id = "day5-sight2"></option>
+                <option value="sight3" id = "day5-sight3"></option>
+            </select>
+            <button id = "add-button5" onclick = "
+
+            ">+</button>
     </div>
     <div id="day6" class="day">
         <p>Ден 6</p>
         <label>Град: </label>
-        <select id="day6-town">
-            <option value="" disabled selected hidden>Изберете град</option>
-            <option value="town1" class="town-option1"></option>
-            <option value="town2" class="town-option2"></option>
-            <option value="town3" class="town-option3"></option>
-            <option value="town4" class="town-option4"></option>
-            <option value="town5" class="town-option5"></option>
-        </select>
-        <br>
-        <label>Забележителност:</label>
-        <select id="day6-sight1">
-            <option value="" disabled selected hidden>Изберете забележителност</option>
-            <option value="sight1"></option>
-            <option value="sight2"></option>
-            <option value="sight3"></option>
-        </select>
-        <button id="add-button6" onclick="">+</button>
+        <select id="day6-town"  onchange = "
+                    displaySights(6);
+
+                ">
+                    <option value = "" disabled selected hidden>Изберете град</option >
+                    <option value="town1" class = "town-option1"></option>
+                    <option value="town2" class = "town-option2"></option>
+                    <option value="town3" class = "town-option3"></option>
+                    <option value="town4" class = "town-option4"></option>
+                    <option value="town5" class = "town-option5"></option>
+                </select>
+            <br>
+            <label>Забележителност:</label>
+            <select id="day6-sights">
+                <option value = "" disabled selected hidden>Изберете забележителност</option>
+                <option value="sight1" id = "day6-sight1"></option>
+                <option value="sight2" id = "day6-sight2"></option>
+                <option value="sight3" id = "day6-sight3"></option>
+            </select>
+            <button id = "add-button6" onclick = "
+
+            ">+</button>
     </div>
     <div id="day7" class="day">
         <p>Ден 7</p>
         <label>Град: </label>
-        <select id="day7-town">
-            <option value="" disabled selected hidden>Изберете град</option>
-            <option value="town1" class="town-option1"></option>
-            <option value="town2" class="town-option2"></option>
-            <option value="town3" class="town-option3"></option>
-            <option value="town4" class="town-option4"></option>
-            <option value="town5" class="town-option5"></option>
-        </select>
-        <br>
-        <label>Забележителност:</label>
-        <select id="day7-sight1">
-            <option value="" disabled selected hidden>Изберете забележителност</option>
-            <option value="sight1"></option>
-            <option value="sight2"></option>
-            <option value="sight3"></option>
-        </select>
-        <button id="add-button7" onclick="">+</button>
+        <select id="day7-town"  onchange = "
+                    displaySights(7);
+
+                ">
+                    <option value = "" disabled selected hidden>Изберете град</option >
+                    <option value="town1" class = "town-option1"></option>
+                    <option value="town2" class = "town-option2"></option>
+                    <option value="town3" class = "town-option3"></option>
+                    <option value="town4" class = "town-option4"></option>
+                    <option value="town5" class = "town-option5"></option>
+                </select>
+            <br>
+            <label>Забележителност:</label>
+            <select id="day7-sights">
+                <option value = "" disabled selected hidden>Изберете забележителност</option>
+                <option value="sight1" id = "day7-sight1"></option>
+                <option value="sight2" id = "day7-sight2"></option>
+                <option value="sight3" id = "day7-sight3"></option>
+            </select>
+            <button id = "add-button7" onclick = "
+
+            ">+</button>
     </div>
     <div id="day8" class="day">
         <p>Ден 8</p>
         <label>Град: </label>
-        <select id="day8-town">
-            <option value="" disabled selected hidden>Изберете град</option>
-            <option value="town1" class="town-option1"></option>
-            <option value="town2" class="town-option2"></option>
-            <option value="town3" class="town-option3"></option>
-            <option value="town4" class="town-option4"></option>
-            <option value="town5" class="town-option5"></option>
-        </select>
-        <br>
-        <label>Забележителност:</label>
-        <select id="day8-sight1">
-            <option value="" disabled selected hidden>Изберете забележителност</option>
-            <option value="sight1"></option>
-            <option value="sight2"></option>
-            <option value="sight3"></option>
-        </select>
-        <button id="add-button8" onclick="">+</button>
+        <select id="day8-town"  onchange = "
+                    displaySights(8);
+
+                ">
+                    <option value = "" disabled selected hidden>Изберете град</option >
+                    <option value="town1" class = "town-option1"></option>
+                    <option value="town2" class = "town-option2"></option>
+                    <option value="town3" class = "town-option3"></option>
+                    <option value="town4" class = "town-option4"></option>
+                    <option value="town5" class = "town-option5"></option>
+                </select>
+            <br>
+            <label>Забележителност:</label>
+            <select id="day8-sights">
+                <option value = "" disabled selected hidden>Изберете забележителност</option>
+                <option value="sight1" id = "day8-sight1"></option>
+                <option value="sight2" id = "day8-sight2"></option>
+                <option value="sight3" id = "day8-sight3"></option>
+            </select>
+            <button id = "add-button8" onclick = "
+
+            ">+</button>
     </div>
     <div id="day9" class="day">
         <p>Ден 9</p>
         <label>Град: </label>
-        <select id="day9-town">
-            <option value="" disabled selected hidden>Изберете град</option>
-            <option value="town1" class="town-option1"></option>
-            <option value="town2" class="town-option2"></option>
-            <option value="town3" class="town-option3"></option>
-            <option value="town4" class="town-option4"></option>
-            <option value="town5" class="town-option5"></option>
-        </select>
-        <br>
-        <label>Забележителност:</label>
-        <select id="day9-sight1">
-            <option value="" disabled selected hidden>Изберете забележителност</option>
-            <option value="sight1"></option>
-            <option value="sight2"></option>
-            <option value="sight3"></option>
-        </select>
-        <button id="add-button9" onclick="">+</button>
+        <select id="day9-town"  onchange = "
+                    displaySights(9);
+
+                ">
+                    <option value = "" disabled selected hidden>Изберете град</option >
+                    <option value="town1" class = "town-option1"></option>
+                    <option value="town2" class = "town-option2"></option>
+                    <option value="town3" class = "town-option3"></option>
+                    <option value="town4" class = "town-option4"></option>
+                    <option value="town5" class = "town-option5"></option>
+                </select>
+            <br>
+            <label>Забележителност:</label>
+            <select id="day9-sights">
+                <option value = "" disabled selected hidden>Изберете забележителност</option>
+                <option value="sight1" id = "day9-sight1"></option>
+                <option value="sight2" id = "day9-sight2"></option>
+                <option value="sight3" id = "day9-sight3"></option>
+            </select>
+            <button id = "add-button9" onclick = "
+
+            ">+</button>
     </div>
     <div id="day10" class="day">
         <p>Ден 10</p>
         <label>Град: </label>
-        <select id="day10-town">
-            <option value="" disabled selected hidden>Изберете град</option>
-            <option value="town1" class="town-option1"></option>
-            <option value="town2" class="town-option2"></option>
-            <option value="town3" class="town-option3"></option>
-            <option value="town4" class="town-option4"></option>
-            <option value="town5" class="town-option5"></option>
-        </select>
-        <br>
-        <label>Забележителност:</label>
-        <select id="day10-sight1">
-            <option value="" disabled selected hidden>Изберете забележителност</option>
-            <option value="sight1"></option>
-            <option value="sight2"></option>
-            <option value="sight3"></option>
-        </select>
-        <button id="add-button10" onclick="">+</button>
+        <select id="day10-town"  onchange = "
+                    displaySights(10);
+
+                ">
+                    <option value = "" disabled selected hidden>Изберете град</option >
+                    <option value="town1" class = "town-option1"></option>
+                    <option value="town2" class = "town-option2"></option>
+                    <option value="town3" class = "town-option3"></option>
+                    <option value="town4" class = "town-option4"></option>
+                    <option value="town5" class = "town-option5"></option>
+                </select>
+            <br>
+            <label>Забележителност:</label>
+            <select id="day10-sights">
+                <option value = "" disabled selected hidden>Изберете забележителност</option>
+                <option value="sight1" id = "day10-sight1"></option>
+                <option value="sight2" id = "day10-sight2"></option>
+                <option value="sight3" id = "day10-sight3"></option>
+            </select>
+            <button id = "add-button10" onclick = "
+
+            ">+</button>
     </div>
 </div>
     </div>

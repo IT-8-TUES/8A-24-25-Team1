@@ -8,15 +8,16 @@ function holidayTime() {
     difference = (endDate - startDate) / (1000 * 60 * 60 * 24);
 
     if(difference > 10 || difference < 1) {
-        alert('Почивката тябва да е най-малко 1 ден и най-много 10 дена');
+        alert('Почивката трябва да е най-малко 1 ден и най-много 10 дена');
         difference = 0;
     }
 
     return difference;
 }
 // Функция за определяне на региона и извеждане на името на екскурзията
+let regionName = '';
 function region() {
-    let regionName = '';
+    
     let selectedRegion = document.getElementById('region').value;
 
     switch(selectedRegion) {
@@ -43,7 +44,6 @@ function region() {
         showingDays();
         towns(regionName);
         displayTowns();
-     //   namingDays();
     }
 
 }
@@ -85,147 +85,146 @@ function towns(regionName) {
 function displayTowns() {
     let i;
     
-    for(i = 0; i < 3; i++) {
+    for(i = 0; i < 5; i++) {
         document.querySelectorAll(`.town-option${i+1}`).forEach(
             function(item) {
                 item.innerText = townList[i];
-                item.value = townList[i];
             })
     }
 }
 
 
-let sights = {
-    sight1: '',
-    sight2: '',
-    sight3: '',
-};
+let sights = [];
 
 //Функция за избиране на забележителности
 
-function defineSights() {
-    let i;
-    for(i = 0; i <= difference; i++) {
-        selectorTownValue = document.querySelector(`.town-option${i+1}`).value;
-
-        if(townList = ['Видин', 'Белоградчик', 'Берковица', 'Чипровци', 'Козлодуй']) {
+function defineSights(selectorTownValue) {
+    if(regionName === 'Северозападна България') {
             switch(selectorTownValue) {
                 case 'town1':
-                    sights.sight1 = 'Крепостта Баба Вида',
-                    sights.sight2 = 'Катедрален храм "Св. Димитър"',
-                    sights.sight3 = 'Дунавският парк';
+                    sights[0] = 'Крепостта Баба Вида';
+                    sights[1] = 'Катедрален храм "Св. Димитър"';
+                    sights[2] = 'Дунавският парк';
                     break;
                 case 'town2': 
-                    sights.sight1 = 'Белоградчишките скали',
-                    sights.sight2 = 'Белоградчишката крепост (Калето',
-                    sights.sight3 = 'Пещера Магура';
+                    sights[0] = 'Белоградчишките скали';
+                    sights[1] = 'Белоградчишката крепост (Калето';
+                    sights[2] = 'Пещера Магура';
                     break;
                 case 'town3': 
-                    sights.sight1 = 'Часовникова кула',
-                    sights.sight2 = 'Връх Ком',
-                    sights.sight3 = 'Клисурски манастир';
+                    sights[0] = 'Часовникова кула';
+                    sights[1] = 'Връх Ком';
+                    sights[2] = 'Клисурски манастир';
                     break;
                 case 'town4': 
-                    sights.sight1 = 'Чипровският манастир "Св. Иван Рилски"',
-                    sights.sight2 = 'Исторически музей – Чипровци',
-                    sights.sight3 = 'Чипровски водопад';
+                    sights[0] = 'Чипровският манастир "Св. Иван Рилски"';
+                    sights[1] = 'Исторически музей – Чипровци';
+                    sights[2] = 'Чипровски водопад';
                     break;
                 case 'town5': 
-                    sights.sight1 = 'Национален музей-параход "Радецки"',
-                    sights.sight2 = 'Исторически музей Козлодуй',
-                    sights.sight3 = 'Паметник на Христо Ботев и четата му';
+                    sights[0] = 'Национален музей-параход "Радецки"';
+                    sights[1] = 'Исторически музей Козлодуй';
+                    sights[2] = 'Паметник на Христо Ботев и четата му';
                     break;
             }
         }
-        else if(townList = ['Шумен', 'Варна', 'Велико Търново', 'Силистра', 'Добрич']) {
-            switch(selectorTownValue) {
-                case 'town1':
-                    sights.sight1 = 'Шуменска крепост',
-                    sights.sight2 = 'Паметник "Създатели на българската държава"',
-                    sights.sight3 = 'Мадарски конник';
-                    break;
-                case 'town2': 
-                    sights.sight1 = 'Морската градина',
-                    sights.sight2 = 'Археологически музей Варна',
-                    sights.sight3 = 'Аладжа манастир';
-                    break;
-                case 'town3': 
-                    sights.sight1 = 'Крепост Царевец',
-                    sights.sight2 = 'Самоводска чаршия',
-                    sights.sight3 = 'Архитектурен резерват Арбанаси';
-                    break;
-                case 'town4': 
-                    sights.sight1 = 'Биосферен резерват "Сребърна"',
-                    sights.sight2 = ' Крепост Дуросторум–Дръстър',
-                    sights.sight3 = 'Римската гробница';
-                    break;
-                case 'town5': 
-                    sights.sight1 = 'Етнографски комплекс "Стария Добрич"',
-                    sights.sight2 = 'Градски парк "Св. Георги"',
-                    sights.sight3 = 'Музей "Йовковият Добрич"' ;
-                    break;
-            }
+    else if(regionName === 'Североизточна България') {
+        switch(selectorTownValue) {
+            case 'town1':
+                sights[0] = 'Шуменска крепост';
+                sights[1] = 'Паметник "Създатели на българската държава"';
+                sights[2] = 'Мадарски конник';
+                break;
+            case 'town2': 
+                sights[0] = 'Морската градина';
+                sights[1] = 'Археологически музей Варна';
+                sights[2] = 'Аладжа манастир';
+                break;
+            case 'town3': 
+                sights[0] = 'Крепост Царевец';
+                sights[1] = 'Самоводска чаршия';
+                sights[2] = 'Архитектурен резерват Арбанаси';
+                break;
+            case 'town4': 
+                sights[0] = 'Биосферен резерват "Сребърна"';
+                sights[1] = 'Крепост Дуросторум–Дръстър';
+                sights[2] = 'Римската гробница';
+                break;
+            case 'town5': 
+                sights[0] = 'Етнографски комплекс "Стария Добрич"';
+                sights[1] = 'Градски парк "Св. Георги"';
+                sights[2] = 'Музей "Йовковият Добрич"' ;
+                break;
         }
-        else if(townList = ['Мелник', 'Банско', 'Сандански', 'Кюстендил', 'София']) {
-            switch(selectorTownValue) {
-                case 'town1':
-                    sights.sight1 = 'Мелнишките пирамиди',
-                    sights.sight2 = 'Кордопуловата къща',
-                    sights.sight3 = 'Роженски манастир';
-                    break;
-                case 'town2': 
-                    sights.sight1 = 'Възрожденски къщи',
-                    sights.sight2 = 'Църквата "Света Троица"',
-                    sights.sight3 = 'Пирин';
-                    break;
-                case 'town3': 
-                    sights.sight1 = 'Археологически музей с римски мозайки',
-                    sights.sight2 = 'Римски терми',
-                    sights.sight3 = 'Скакавишкия водопад';
-                    break;
-                case 'town4': 
-                    sights.sight1 = 'Крепост Хисарлъка',
-                    sights.sight2 = ' Крепост Дуросторум–Дръстър',
-                    sights.sight3 = 'Римската гробница';
-                    break;
-                case 'town5': 
-                    sights.sight1 = 'Храм-паметник "Свети Александър Невски"',
-                    sights.sight2 = 'Боянска църква',
-                    sights.sight3 = 'Витоша планина – Черни връх' ;
-                    break;
-            }
-        }
-        else if(townList = ['Бургас', 'Стара Загора', 'Хасково', 'Сливен', 'Несебър']) {
-            switch(selectorTownValue) {
-                case 'town1':
-                    sights.sight1 = 'Морска градина',
-                    sights.sight2 = 'Остров Света Анастасия',
-                    sights.sight3 = 'Природозащитен център "Пода"';
-                    break;
-                case 'town2': 
-                    sights.sight1 = 'Мемориален комплекс "Бранителите на Стара Загора"',
-                    sights.sight2 = 'Античният форум "Августа Траяна"',
-                    sights.sight3 = 'Парк "Аязмото"';
-                    break;
-                case 'town3': 
-                    sights.sight1 = 'Монумент "Света Богородица с Младенеца"',
-                    sights.sight2 = 'Лесопарк "Кенана"',
-                    sights.sight3 = 'Перперикон';
-                    break;
-                case 'town4': 
-                    sights.sight1 = 'Крепост Туида',
-                    sights.sight2 = 'Природен парк "Сините камъни"',
-                    sights.sight3 = 'Пантеон на героите и Хаджи Димитър';
-                    break;
-                case 'town5': 
-                    sights.sight1 = 'Старият Несебър',
-                    sights.sight2 = 'Вятърната мелница',
-                    sights.sight3 = 'Църквата "Свети Стефан"' ;
-                    break;
-            }
-        }
-
     }
-
+    else if(regionName === 'Югозападна България') {
+        switch(selectorTownValue) {
+            case 'town1':
+                sights[0] = 'Мелнишките пирамиди';
+                sights[1] = 'Кордопуловата къща';
+                sights[2] = 'Роженски манастир';
+                break;
+            case 'town2': 
+                sights[0] = 'Възрожденски къщи';
+                sights[1] = 'Църквата "Света Троица"';
+                sights[2] = 'Пирин';
+                break;
+            case 'town3': 
+                sights[0] = 'Археологически музей с римски мозайки';
+                sights[1] = 'Римски терми';
+                sights[2] = 'Скакавишкия водопад';
+                break;
+            case 'town4': 
+                sights[0] = 'Крепост Хисарлъка';
+                sights[1] = ' Крепост Дуросторум–Дръстър';
+                sights[2] = 'Римската гробница';
+                break;
+            case 'town5': 
+                sights[0] = 'Храм-паметник "Свети Александър Невски"';
+                sights[1] = 'Боянска църква';
+                sights[2] = 'Витоша планина – Черни връх' ;
+                break;
+        }
+    }
+    else if(regionName === 'Югоизточна България') {
+        switch(selectorTownValue) {
+            case 'town1':
+                sights[0] = 'Морска градина';
+                sights[1] = 'Остров Света Анастасия';
+                sights[2] = 'Природозащитен център "Пода"';
+                break;
+            case 'town2': 
+                sights[0] = 'Мемориален комплекс "Бранителите на Стара Загора"';
+                sights[1] = 'Античният форум "Августа Траяна"';
+                sights[2] = 'Парк "Аязмото"';
+                break;
+            case 'town3': 
+                sights[0] = 'Монумент "Света Богородица с Младенеца"';
+                sights[1] = 'Лесопарк "Кенана"';
+                sights[2] = 'Перперикон';
+                break;
+            case 'town4': 
+                sights[0] = 'Крепост Туида';
+                sights[1] = 'Природен парк "Сините камъни"';
+                sights[2] = 'Пантеон на героите и Хаджи Димитър';
+                break;
+            case 'town5': 
+                sights[0] = 'Старият Несебър';
+                sights[1] = 'Вятърната мелница';
+                sights[2] = 'Църквата "Свети Стефан"' ;
+                break;
+        }
+    }
 }
+
+let dayNum = 0;
+
+function displaySights(dayNum) {
+    let selectorTownValue = document.querySelector(`#day${dayNum}-town`).value;
+    defineSights(selectorTownValue);
+
+    for(let i = 1; i <= 3; i++) {
+        document.querySelector(`#day${dayNum}-sight${i}`).innerText = `${sights[i-1]}`; 
+    }
     
+}
