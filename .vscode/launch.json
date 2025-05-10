@@ -9,6 +9,6 @@
             "request": "launch",
             "url": "Open new.html",
             "webRoot": "${workspaceFolder}"
-        }
+        },
     ]
 }
