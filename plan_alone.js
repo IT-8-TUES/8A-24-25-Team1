@@ -108,7 +108,7 @@ function defineSights(selectorTownValue) {
                     break;
                 case 'town2': 
                     sights[0] = 'Белоградчишките скали';
-                    sights[1] = 'Белоградчишката крепост (Калето';
+                    sights[1] = 'Белоградчишката крепост (Калето)';
                     sights[2] = 'Пещера Магура';
                     break;
                 case 'town3': 
@@ -220,11 +220,54 @@ function defineSights(selectorTownValue) {
 let dayNum = 0;
 // Функция за показване на забележителностите
 function displaySights(dayNum) {
+    valueSelector();
     let selectorTownValue = document.querySelector(`#day${dayNum}-town`).value;
     defineSights(selectorTownValue);
 
     for(let i = 1; i <= 3; i++) {
         document.querySelector(`#day${dayNum}-sight${i}`).innerText = `${sights[i-1]}`; 
     }
+    
+}
+
+
+// Фуункция за създаване на нови селектори
+
+let count = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+function addSight(dayNum) {
+    let i;
+
+    count[dayNum-1]++;
+    console.log(count[dayNum-1]);
+
+    if(count[dayNum-1] <= 3) {
+        const container = document.getElementById(`day${dayNum}`);
+
+        const newSightSelector = document.createElement("select");
+        newSightSelector.id = `day${dayNum}-sights${count[dayNum-1]}`;
+
+        const labelSight = document.createElement("label");
+        labelSight.textContent = 'Забележителност: ';
+
+        const newLine = document.createElement("br");
+
+        const addButton = document.getElementById(`add-button${dayNum}`);
+
+        for(i = 0;i < 3;i++) {
+            const sightOption = document.createElement("option");
+
+            sightOption.value = `sight${i+1}`;
+            
+            const TextOption = document.createTextNode(`${sights[i]}`);
+            sightOption.appendChild(TextOption);
+
+            newSightSelector.appendChild(sightOption);
+        }
+        container.appendChild(newLine);
+        container.appendChild(labelSight);
+        container.appendChild(newSightSelector);
+        container.appendChild(addButton);
+    }
+    else alert('Можете да си добавите най-много 2 забележителности на ден');
     
 }
