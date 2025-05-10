@@ -1,7 +1,6 @@
 const galleryImage = document.getElementById("galleryImage");
 let currentIndex = 0;
 
-// Define different image sets for excursions
 const imageSets = {
     "excursion": ["Images/Image1.jpg", "Images/Image2.jpg", "Images/Image3.jpg", "Images/Image4.jpg"],
     "excursion1": ["Images/Excursion1-1.jpg", "Images/Excursion1-2.jpg", "Images/Excursion1-3.jpg"],
@@ -12,10 +11,8 @@ const imageSets = {
     "excursion6": ["Images/Excursion6-1.jpg", "Images/Excursion6-2.jpg", "Images/Excursion6-3.jpg"]
 };
 
-// Get the current page name dynamically
-const pageName = window.location.pathname.split("/").pop().split(".")[0]; // Removes `.html` from filename
+const pageName = window.location.pathname.split("/").pop().split(".")[0]; 
 
-// Select the correct image set, or default to the main excursion set
 const images = imageSets[pageName] || imageSets["excursion"];
 
 document.addEventListener("DOMContentLoaded", () => {
