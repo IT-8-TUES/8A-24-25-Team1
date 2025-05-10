@@ -13,7 +13,7 @@ const imageSets = {
 
 const pageName = window.location.pathname.split("/").pop().split(".")[0]; 
 
-const images = imageSets[pageName] || imageSets["excursion"];
+const images = imageSets[pageName];
 
 document.addEventListener("DOMContentLoaded", () => {
     updateImage();
