@@ -6,7 +6,7 @@ const imageSets = {
     "excursion1": ["Images/haskovo.jpg", "Images/varna.jpg", "Images/Melnik.jpg"],
     "excursion2": ["Images/Excursion2-1.jpg", "Images/Excursion2-2.jpg", "Images/Excursion2-3.jpg"],
     "excursion3": ["Images/Excursion3-1.jpg", "Images/Excursion3-2.jpg", "Images/Excursion3-3.jpg"],
-    "excursion4": ["Images/Excursion4-1.jpg", "Images/Excursion4-2.jpg", "Images/Excursion4-3.jpg"],
+    "excursion4": ["Images/haskovo.jpg", "Images/varna.jpg", "Images/Melnik.jpg"],
     "excursion5": ["Images/Excursion5-1.jpg", "Images/Excursion5-2.jpg", "Images/Excursion5-3.jpg"],
     "excursion6": ["Images/Excursion6-1.jpg", "Images/Excursion6-2.jpg", "Images/Excursion6-3.jpg"]
 };
