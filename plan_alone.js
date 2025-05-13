@@ -232,27 +232,21 @@ function displaySights(dayNum) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("DOM loaded")
     for(dayNum = 1; dayNum <= 10; dayNum++) {
-        console.log("For started")
         valueSelector(dayNum);
     }
-    console.log("redyyy");
 });
 
 
 function valueSelector(dayNum) {
     const sightsSelect = document.getElementById(`day${dayNum}-sights`);
-    const townSelectorValue = document.getElementById(`day${dayNum}-town`).value;    console.log("value ready");
-    console.log(townSelectorValue);
+    const townSelectorValue = document.getElementById(`day${dayNum}-town`).value;
     if(townSelectorValue === "no-value") {
         sightsSelect.disabled = true; 
-        console.log('disadabled');
     }
         
     else {
         sightsSelect.disabled = false;
-        console.log(' not disadabled');
     }
         
 
