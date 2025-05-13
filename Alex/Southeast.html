@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Югозападна част</title>
     <link rel="stylesheet" href="excursion.css">
+    <script src="gallery.js" defer></script>
 </head>
 <body>
     <div class="menu">
@@ -26,7 +27,6 @@
                 Витоша е най-близката планина до София и една от най-популярните за туризъм. Тя предлага разнообразие от пешеходни маршрути, които са подходящи за всеки сезон. През зимата е дом на зимни курорти, като „Алеко“, които привличат любителите на ски и сноуборд. Летните месеци са идеални за разходки, пикници и наблюдение на дивата природа.
             </p>
         </div>
-
         <div class="trip-info">
             <h3>Черни връх</h3>
             <p>
@@ -199,6 +199,13 @@
                 Историческият музей разказва историята на региона чрез експонати от различни епохи. Той представя археологически находки, етнографски материали и културни традиции, запазени през вековете.
             </p>
         </div>
+        <div class="trip-info">
+            <h3>Снимки:</h3>
+            <div class="image-gallery">
+                <button class="prev" onclick="changeImage(-1)"><</button>
+                <img id="galleryImage" src="Images/noimage.jpg" alt="Снимки от екскурзията">
+                <button class="next" onclick="changeImage(1)">></button>
+            </div>
     </div>
 </body>
 </html>
