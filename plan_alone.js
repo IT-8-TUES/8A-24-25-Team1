@@ -220,7 +220,8 @@ function defineSights(selectorTownValue) {
 let dayNum = 0;
 // Функция за показване на забележителностите
 function displaySights(dayNum) {
-    valueSelector();
+    console.log('The function is started');
+
     let selectorTownValue = document.querySelector(`#day${dayNum}-town`).value;
     defineSights(selectorTownValue);
 
@@ -230,10 +231,35 @@ function displaySights(dayNum) {
     
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOM loaded")
+    for(dayNum = 1; dayNum <= 10; dayNum++) {
+        console.log("For started")
+        valueSelector(dayNum);
+    }
+    console.log("redyyy");
+});
 
-// Фуункция за създаване на нови селектори
+
+function valueSelector(dayNum) {
+    const sightsSelect = document.getElementById(`day${dayNum}-sights`);
+    const townSelectorValue = document.getElementById(`day${dayNum}-town`).value;    console.log("value ready");
+    console.log(townSelectorValue);
+    if(townSelectorValue === "no-value") {
+        sightsSelect.disabled = true; 
+        console.log('disadabled');
+    }
+        
+    else {
+        sightsSelect.disabled = false;
+        console.log(' not disadabled');
+    }
+        
+
+}
 
 let count = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
 function addSight(dayNum) {
     let i;
 
