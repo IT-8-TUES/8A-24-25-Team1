@@ -9,7 +9,7 @@ const imageSets = {
     "excursion4": ["Images/haskovo.jpg", "Images/varna.jpg", "Images/Melnik.jpg"],
     "excursion5": ["Images/Excursion5-1.jpg", "Images/Excursion5-2.jpg", "Images/Excursion5-3.jpg"],
     "excursion6": ["Images/Excursion6-1.jpg", "Images/Excursion6-2.jpg", "Images/Excursion6-3.jpg"],
-    Southeast: ["Images/Southeast-1.jpg", "Images/Southeast-2.jpg", "Images/Southeast-3.jpg"]
+    "Southeast": ["Images/Vitosha.jpg", "Images/Vitosha2.jpg", "Images/Chernivruh.jpg", "Images/Chernivruh2.jpg" ,"Images/zlatnimostove.jpg", "Images/zlatnimostove2.jpg", "Images/Boyanawaterfall.jpg", "Images/boyanachurch.jpg", "Images/Bulgarian_National_Museum_of_History.jpg", "Images/Bulgarian_National_Museum_of_History2.jpg", "Images/Bulgarian_National_Museum_of_History3.jpg",]
 };
 
 const pageName = window.location.pathname.split("/").pop().split(".")[0]; 
