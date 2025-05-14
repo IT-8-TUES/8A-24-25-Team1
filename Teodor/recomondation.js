@@ -1,449 +1,335 @@
-    /*  
-    switch (selectedCity) {
-      case 'option1':
-        output.textContent = 'Северозападна Бълагрия';
-
-        town1.textContent = 'Видин';
-
-        town1hotel1.textContent = 'Хотел Ровно – Централно разположен хотел с добра оценка от гостите.';
-        town1hotel2.textContent = 'Семеен хотел Анна-Кристина – Предлага комфортно настаняване с висока оценка.';
-
-        town2.textContent = 'Белоградчик';
-
-        town2hotel1.textContent = 'Хотел Скалите – Четиризвезден хотел в центъра на града с удобства за релакс.';
-        town2hotel2.textContent = 'Hotel Fort o Bel – Съчетание от комфорт и красива гледка към природата.';
-        
-        town3.textContent = 'Берковица';
-
-        town3hotel1.textContent = 'Хотел "Ком" – разположен в подножието на Стара планина, предлага уютни стаи и красива природа.';
-        town3hotel2.textContent = 'Хотел "Берковица" – централно разположен хотел с удобства за туристи и бизнес пътуващи.';
-
-        town4.textContent = 'Чипровци';
-
-        town4hotel1.textContent = 'Хотел Кипровец – Разположен в центъра на града, предлага комфортно настаняване.';
-        town4hotel2.textContent = 'Бутик Хотел Илица – Бутиков хотел в близост до Чипровци с модерни удобства.';
-
-        town5.textContent = 'Козлодуй';
-
-        town5hotel1.textContent = 'Комплекс Радецки – Хотел-ресторант на брега на Дунав с историческо значение.';
-        town5hotel2.textContent = 'By The River Hotel – Модерен хотел с удобства и красива гледка.';        
-        break;
-      case 'option2':
-        output.textContent = 'Североизточна България';
-
-        town1.textContent = 'Шумен';
-
-        town1hotel1.textContent = 'Хотел Роял – Централно разположен хотел с модерни удобства.';
-        town1hotel2.textContent = 'Family Art Hotel Nirvana – Семейно ориентиран хотел с артистичен дизайн.';
-
-        town2.textContent = 'Варна';
-
-        town2hotel1.textContent = 'Комплекс Хоризонт – Луксозен хотел с висока оценка от гостите.';
-        town2hotel2.textContent = 'Хотел Виктория – Централно разположен хотел с удобства за бизнес и отдих.';
-
-        town3.textContent = 'Велико Търново';
-
-        town3hotel1.textContent = 'Хотел Янтра – Разположен в центъра на града с панорамна гледка към Царевец.';
-        town3hotel2.textContent = 'Boutique Hotel Tsarevets – Бутиков хотел с елегантен дизайн и удобства.';
-
-        town4.textContent = 'Силистра';
-
-        town4hotel1.textContent = 'Хотел Дръстър – Луксозен хотел с изглед към Дунав и модерни удобства.';
-        town4hotel2.textContent = 'Хотел Силистра – Централно разположен хотел с комфортни стаи.';
-
-        town5.textContent = 'Добрич';
-
-        town5hotel1.textContent = 'Хотел България – Централно разположен хотел с удобства за бизнес и отдих.';
-        town5hotel2.textContent = 'Хотел Добруджа – Комфортен хотел с ресторант и конферентни зали.';    
-        break;
-
-      case 'option3':
-        output.textContent = 'Югозападна България';
-
-        town1.textContent = 'Мелник';
-
-        town1hotel1.textContent = 'Хотел Мелник – Комфортен хотел с традиционен стил и модерни удобства.';
-        town1hotel2.textContent = 'Хотел Болярска къща – Бутиков хотел с автентична атмосфера.';
-
-        town2.textContent = 'Банско';
-
-        town2hotel1.textContent = 'Кемпински Хотел Гранд Арена – Луксозен хотел с директен достъп до ски пистите.';
-        town2hotel2.textContent = 'Хотел Лъки Банско – Петзвезден хотел с модерни удобства и СПА център.';
-
-        town3.textContent = 'Сандански';
-
-        town3hotel1.textContent = 'Парк Хотел Пирин – Луксозен СПА хотел с минерални басейни.';
-        town3hotel2.textContent = 'Хотел Свети Никола – Централно разположен хотел с модерни удобства.';
-
-        town4.textContent = 'Кюстендил';
-
-        town4hotel1.textContent = 'Хотел Стримон Гардън СПА – Луксозен СПА хотел с минерални басейни.';
-        town4hotel2.textContent = 'Хотел Велбъжд – Централно разположен хотел с комфортни стаи.';
-
-        town5.textContent = 'София';
-
-        town5hotel1.textContent = 'Sense Hotel Sofia – луксозен хотел с панорамна гледка към града и отличен спа център.';
-        town5hotel2.textContent = 'Hotel Niky – удобно разположен хотел с комфортни стаи и приятелско обслужване.';     
-
-        break;
-
-
-      case 'option4':
-        output.textContent = 'Югоизточна България';
-
-        town1.textContent = 'Бургас';
-
-        town1hotel1.textContent = 'Hotel Bulgaria Burgas – четиризвезден хотел в центъра на града с модерни удобства.';
-        town1hotel2.textContent = 'Aqua Hotel – комфортен хотел с басейн и спа център, подходящ за отдих.';
-
-        town2.textContent = 'Стара Загора';
-
-        town2hotel1.textContent = 'Park Hotel Stara Zagora – луксозен хотел с изглед към езеро и отлични спа услуги.';
-        town2hotel2.textContent = 'Hotel Elegance – модерен хотел в центъра с удобства за бизнес и отдих.';
-
-        town3.textContent = 'Ямбол';
-
-        town3hotel1.textContent = 'Hotel Diana Palace – модерен хотел с всички удобства в центъра на града.';
-        town3hotel2.textContent = 'Hotel Tundzha – класически хотел с дългогодишна история и добро обслужване.';
-
-        town4.textContent = 'Сливен';
-
-        town4hotel1.textContent = 'Hotel Park Central – модерен хотел в центъра на града с всички удобства.';
-        town4hotel2.textContent = 'Hotel Imperia – комфортен хотел с ресторант и спа услуги.';
-
-        town5.textContent = 'Несебър';
-
-        town5hotel1.textContent = 'Sol Nessebar Palace – луксозен хотел с all-inclusive услуги и множество удобства.';
-        town5hotel2.textContent = 'Hotel St. Stefan – малък хотел в стария град с автентична атмосфера.';
-        
-        break;
-      default:
-        output.textContent = ' ';
-
-        town1.textContent = ' ';
-
-        town1hotel1.textContent = ' ';
-        town1hotel2.textContent = ' ';
-
-        town2.textContent = ' ';
-
-        town2hotel1.textContent = ' ';
-        town2hotel2.textContent = ' ';
-
-        town3.textContent = ' ';
-
-        town3hotel1.textContent = ' ';
-        town3hotel2.textContent = ' ';
-
-        town4.textContent = ' ';
-
-        town4hotel1.textContent = ' ';
-        town4hotel2.textContent = ' ';
-
-        town5.textContent = ' ';
-
-        town5hotel1.textContent = ' ';
-        town5hotel2.textContent = ' ';
-        break;
+// Функция за определяне на региона и извеждане на името на екскурзията
+let regionName = '';
+function region() {
+    
+    let selectedRegion = document.getElementById('region').value;
+    switch(selectedRegion) {
+        case 'Region1':
+            regionName = 'Северозападна България';
+            break;
+        case 'Region2':
+            regionName = 'Североизточна България';
+            break;
+        case 'Region3':
+            regionName = 'Югозападна България';
+            break;
+        case 'Region4':
+            regionName = 'Югоизточна България';
+            break;
+        case '':
+            regionName = null;
+            alert('Изберете регион');
+            break;
     }
-  
+    getTowns(regionName);
+}
 
+let town = [];
 
-
-  document.getElementById('cityRestorant').addEventListener('change', function () {
-    const selectedCity = this.value;
-    const output = document.getElementById('output');
-
-      const town1 = document.getElementById('town1');
-        
-        const town1retorant1 = document.getElementById('town1retorant1');
-        const town1retorant2 = document.getElementById('town1retorant2');
-        const town1hotel1 = document.getElementById('town1hotel1');
-        const town1hotel2 = document.getElementById('town1hotel2');
-
-      const town2 = document.getElementById('town2');
-
-        const town2retorant1 = document.getElementById('town2retorant1');
-        const town2retorant2 = document.getElementById('town2retorant2');
-        const town2hotel1 = document.getElementById('town2hotel1');
-        const town2hotel2 = document.getElementById('town2hotel2');
-
-      const town3 = document.getElementById('town3');
-
-        const town3retorant1 = document.getElementById('town3retorant1');
-        const town3retorant2 = document.getElementById('town3retorant2');
-        const town3hotel1 = document.getElementById('town3hotel1');
-        const town3hotel2 = document.getElementById('town3hotel2');
-
-      const town4 = document.getElementById('town4');
-
-        const town4retorant1 = document.getElementById('town4retorant1');
-        const town4retorant2 = document.getElementById('town4retorant2');
-        const town4hotel1 = document.getElementById('town4hotel1');
-        const town4hotel2 = document.getElementById('town4hotel2');
-
-      const town5 = document.getElementById('town5');
-
-        const town5retorant1 = document.getElementById('town5retorant1');
-        const town5retorant2 = document.getElementById('town5retorant2');
-        const town5hotel1 = document.getElementById('town5hotel1');
-        const town5hotel2 = document.getElementById('town5hotel2');
-      
-    switch (selectedCity) {
-      case 'option1':
-        output.textContent = 'Северозападна Бълагрия';
-
-        
-      case 'option2':
-        output.textContent = 'Североизточна България';
-
-        town1.textContent = 'Шумен';
-
-        town1retorant1.textContent = 'Gourmet Nirvana – Изискан ресторант с разнообразно меню.';
-        town1retorant2.textContent = 'Popsheytanova Kushta – Традиционна българска кухня в уютна атмосфера.';
-        town1hotel1.textContent = 'Хотел Роял – Централно разположен хотел с модерни удобства.';
-        town1hotel2.textContent = 'Family Art Hotel Nirvana – Семейно ориентиран хотел с артистичен дизайн.';
-
-        town2.textContent = 'Варна';
-
-        town2retorant1.textContent = 'Staria Chinar – Cherno More – Известен с барбекю специалитети и европейска кухня.';
-        town2retorant2.textContent = 'Happy Център Варна – Популярен ресторант с разнообразно меню и отстъпки при резервация.';
-        town2hotel1.textContent = 'Комплекс Хоризонт – Луксозен хотел с висока оценка от гостите.';
-        town2hotel2.textContent = 'Хотел Виктория – Централно разположен хотел с удобства за бизнес и отдих.';
-
-        town3.textContent = 'Велико Търново';
-
-        town3retorant1.textContent = 'Shtastliveca – Известен ресторант с традиционна българска кухня и модерен интериор.';
-        town3retorant2.textContent = 'Ego Pizza & Grill – Предлага пица и грил специалитети в приятна атмосфера.';
-        town3hotel1.textContent = 'Хотел Янтра – Разположен в центъра на града с панорамна гледка към Царевец.';
-        town3hotel2.textContent = 'Boutique Hotel Tsarevets – Бутиков хотел с елегантен дизайн и удобства.';
-
-        town4.textContent = 'Силистра';
-
-        town4retorant1.textContent = 'Ресторант Дунав – Предлага рибни специалитети с изглед към реката.';
-        town4retorant2.textContent = 'Механа Силистра – Традиционна българска кухня в битова обстановка.';
-        town4hotel1.textContent = 'Хотел Дръстър – Луксозен хотел с изглед към Дунав и модерни удобства.';
-        town4hotel2.textContent = 'Хотел Силистра – Централно разположен хотел с комфортни стаи.';
-
-        town5.textContent = 'Добрич';
-
-        town5retorant1.textContent = 'Ресторант Старият Добрич – Традиционна кухня в историческа обстановка.';
-        town5retorant2.textContent = 'Ресторант България – Предлага разнообразно меню с местни специалитети.';
-        town5hotel1.textContent = 'Хотел България – Централно разположен хотел с удобства за бизнес и отдих.';
-        town5hotel2.textContent = 'Хотел Добруджа – Комфортен хотел с ресторант и конферентни зали.';    
-        break;
-
-      case 'option3':
-        output.textContent = 'Югозападна България';
-
-        town1.textContent = 'Мелник';
-
-        town1retorant1.textContent = 'Механа Мелник – Традиционна българска кухня и местни вина.';
-        town1retorant2.textContent = 'Ресторант Вила Мелник – Изискан ресторант с винена листа от местни изби.';
-        town1hotel1.textContent = 'Хотел Мелник – Комфортен хотел с традиционен стил и модерни удобства.';
-        town1hotel2.textContent = 'Хотел Болярска къща – Бутиков хотел с автентична атмосфера.';
-
-        town2.textContent = 'Банско';
-
-        town2retorant1.textContent = 'Механа Дедо Пене – Традиционна българска кухня в уютна обстановка.';
-        town2retorant2.textContent = 'Ресторант Леонардо – Италианска кухня и гурме специалитети.';
-        town2hotel1.textContent = 'Кемпински Хотел Гранд Арена – Луксозен хотел с директен достъп до ски пистите.';
-        town2hotel2.textContent = 'Хотел Лъки Банско – Петзвезден хотел с модерни удобства и СПА център.';
-
-        town3.textContent = 'Сандански';
-
-        town3retorant1.textContent = 'Ресторант Сандански – Традиционна кухня с местни специалитети.';
-        town3retorant2.textContent = 'Ресторант Механа Златен Рог – Битова обстановка и богато меню.';
-        town3hotel1.textContent = 'Парк Хотел Пирин – Луксозен СПА хотел с минерални басейни.';
-        town3hotel2.textContent = 'Хотел Свети Никола – Централно разположен хотел с модерни удобства.';
-
-        town4.textContent = 'Кюстендил';
-
-        town4retorant1.textContent = 'Ресторант Вила Кюстендил – Изискан ресторант с разнообразно меню.';
-        town4retorant2.textContent = 'Механа Чифлика – Традиционна българска кухня в уютна обстановка.';
-        town4hotel1.textContent = 'Хотел Стримон Гардън СПА – Луксозен СПА хотел с минерални басейни.';
-        town4hotel2.textContent = 'Хотел Велбъжд – Централно разположен хотел с комфортни стаи.';
-
-        town5.textContent = 'София';
-
-        town5retorant1.textContent = 'Ресторант Саса – Модерен ресторант с международна кухня.';
-        town5retorant2.textContent = 'Ресторант Хаджидрагановите къщи – Традиционна българска кухня в автентична обстановка.';
-        town5hotel1.textContent = 'Sense Hotel Sofia – луксозен хотел с панорамна гледка към града и отличен спа център.';
-        town5hotel2.textContent = 'Hotel Niky – удобно разположен хотел с комфортни стаи и приятелско обслужване.';     
-
-        break;
-
-
-      case 'option4':
-        output.textContent = 'Югоизточна България';
-
-        town1.textContent = 'Бургас';
-
-        town1retorant1.textContent = 'Happy Bar & Grill – популярна верига с разнообразно меню и бързо обслужване.';
-        town1retorant2.textContent = 'Ресторант „Нептун“ – морски деликатеси и романтична атмосфера край морето.';
-        town1hotel1.textContent = 'Hotel Bulgaria Burgas – четиризвезден хотел в центъра на града с модерни удобства.';
-        town1hotel2.textContent = 'Aqua Hotel – комфортен хотел с басейн и спа център, подходящ за отдих.';
-
-        town2.textContent = 'Стара Загора';
-
-        town2retorant1.textContent = 'Ресторант "Щастливеца" – елегантен ресторант с богато меню и изискана атмосфера.';
-        town2retorant2.textContent = 'Ресторант "Зеленият хълм" – приятно място с традиционна кухня и красива гледка.';
-        town2hotel1.textContent = 'Park Hotel Stara Zagora – луксозен хотел с изглед към езеро и отлични спа услуги.';
-        town2hotel2.textContent = 'Hotel Elegance – модерен хотел в центъра с удобства за бизнес и отдих.';
-
-        town3.textContent = 'Ямбол';
-
-        town3retorant1.textContent = 'Ресторант „Тракия“ – традиционна българска кухня и приятна атмосфера.';
-        town3retorant2.textContent = 'Ресторант „Класик“ – разнообразно меню и уютна обстановка.';
-        town3hotel1.textContent = 'Hotel Diana Palace – модерен хотел с всички удобства в центъра на града.';
-        town3hotel2.textContent = 'Hotel Tundzha – класически хотел с дългогодишна история и добро обслужване.';
-
-        town4.textContent = 'Сливен';
-
-        town4retorant1.textContent = 'Ресторант "Национал" – предлага българска кухня и приятна обстановка.';
-        town4retorant2.textContent = 'Ресторант "Мечта" – уютно място с вкусни ястия и добро обслужване.';
-        town4hotel1.textContent = 'Hotel Park Central – модерен хотел в центъра на града с всички удобства.';
-        town4hotel2.textContent = 'Hotel Imperia – комфортен хотел с ресторант и спа услуги.';
-
-        town5.textContent = 'Несебър';
-
-        town5retorant1.textContent = 'Ресторант "Стария Несебър" – традиционна кухня с изглед към морето.';
-        town5retorant2.textContent = 'Ресторант "Месембрия" – уютно място с морски специалитети и приятна атмосфера.';
-        town5hotel1.textContent = 'Sol Nessebar Palace – луксозен хотел с all-inclusive услуги и множество удобства.';
-        town5hotel2.textContent = 'Hotel St. Stefan – малък хотел в стария град с автентична атмосфера.';
-        
-        break;
-      default:
-        output.textContent = ' ';
-
-        town1.textContent = ' ';
-
-        town1retorant1.textContent = ' ';
-        town1retorant2.textContent = ' ';
-        town1hotel1.textContent = ' ';
-        town1hotel2.textContent = ' ';
-
-        town2.textContent = ' ';
-
-        town2retorant1.textContent = ' ';
-        town2retorant2.textContent = ' ';
-        town2hotel1.textContent = ' ';
-        town2hotel2.textContent = ' ';
-
-        town3.textContent = ' ';
-
-        town3retorant1.textContent = ' ';
-        town3retorant2.textContent = ' ';
-        town3hotel1.textContent = ' ';
-        town3hotel2.textContent = ' ';
-
-        town4.textContent = ' ';
-
-        town4retorant1.textContent = ' ';
-        town4retorant2.textContent = ' ';
-        town4hotel1.textContent = ' ';
-        town4hotel2.textContent = ' ';
-
-        town5.textContent = ' ';
-
-        town5retorant1.textContent = ' ';
-        town5retorant2.textContent = ' ';
-        town5hotel1.textContent = ' ';
-        town5hotel2.textContent = ' ';
-        break;
-    }
-  });
-
-*/
-
-
-document.getElementById('city1').addEventListener('change', function () {
-  const city = this.value;
-
-  const townName = document.getElementById('townName');
-  const rest1 = document.getElementById('rest1');
-  const rest1Link = document.getElementById('rest1Link');
-  const rest2 = document.getElementById('rest2');
-  const rest2Link = document.getElementById('rest2Link');
-  const hotel1 = document.getElementById('hotel1');
-  const hotel1Link = document.getElementById('hotel1Link');
-  const hotel2 = document.getElementById('hotel2');
-  const hotel2Link = document.getElementById('hotel2Link');
-
-  switch (city) {
-    case 'vidin':
-      townName.textContent = 'Видин';
-      rest1.textContent = 'Fish & Grill Дунав – Популярен ресторант с рибни специалитети и европейска кухня, разположен на брега на Дунав.';
-      rest1Link.href = 'https://www.google.com/maps/search/?api=1&query=Fish+%26+Grill+%D0%94%D1%83%D0%BD%D0%B0%D0%B2+%D0%92%D0%B8%D0%B4%D0%B8%D0%BD';
-      rest2.textContent = 'Ресторант Театро – Предлага пица и европейски ястия в уютна атмосфера.';
-      rest2Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%82+%D0%A2%D0%B5%D0%B0%D1%82%D1%80%D0%BE+%D0%92%D0%B8%D0%B4%D0%B8%D0%BD';
-      hotel1.textContent = 'Хотел Ровно – Централно разположен хотел с добра оценка от гостите.';
-      hotel1Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%A5%D0%BE%D1%82%D0%B5%D0%BB+%D0%A0%D0%BE%D0%B2%D0%BD%D0%BE+%D0%92%D0%B8%D0%B4%D0%B8%D0%BD';
-      hotel2.textContent = 'Семеен хотел Анна-Кристина – Предлага комфортно настаняване с висока оценка.';
-      hotel2Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%B5%D0%BC%D0%B5%D0%B5%D0%BD+%D1%85%D0%BE%D1%82%D0%B5%D0%BB+%D0%90%D0%BD%D0%BD%D0%B0-%D0%9A%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BD%D0%B0+%D0%92%D0%B8%D0%B4%D0%B8%D0%BD';
+function getTowns(regionName){
+  switch(regionName){
+    case 'Северозападна България':
+      town = ['Видин','Белоградчик','Берковица','Чипровци','Козлодуй'];
       break;
-
-    case 'belogradchik':
-      townName.textContent = 'Белоградчик';
-      rest1.textContent = 'При Иван – Традиционна българска кухня с висока оценка от посетителите.';
-      rest1Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%82+%D0%9F%D1%80%D0%B8+%D0%98%D0%B2%D0%B0%D0%BD+%D0%91%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%87%D0%B8%D0%BA';
-      rest2.textContent = 'Мислен Камък – Предлага местни специалитети в приятна обстановка.';
-      rest2Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%9C%D0%B8%D1%81%D0%BB%D0%B5%D0%BD+%D0%9A%D0%B0%D0%BC%D1%8A%D0%BA+%D0%91%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%87%D0%B8%D0%BA';
-      hotel1.textContent = 'Хотел Скалите – Четиризвезден хотел в центъра на града с удобства за релакс.';
-      hotel1Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%A5%D0%BE%D1%82%D0%B5%D0%BB+%D0%A1%D0%BA%D0%B0%D0%BB%D0%B8%D1%82%D0%B5+%D0%91%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%87%D0%B8%D0%BA';
-      hotel2.textContent = 'Hotel Fort o Bel – Съчетание от комфорт и красива гледка към природата.';
-      hotel2Link.href = 'https://www.google.com/maps/search/?api=1&query=Hotel+Fort+o+Bel+%D0%91%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%87%D0%B8%D0%BA';
+    case 'Североизточна България':
+      town = ['Шумен','Варна','Велико Търново','Силистра','Добрич'];
       break;
-
-    case 'berkovitsa':
-      townName.textContent = 'Берковица';
-      rest1.textContent = 'Ресторант "Ком" – традиционна българска кухня с приятна обстановка.';
-      rest1Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%82+%D0%9A%D0%BE%D0%BC+%D0%91%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D0%B8%D1%86%D0%B0';
-      rest2.textContent = 'Ресторант "Момина сълза" – семеен ресторант с вкусни местни специалитети.';
-      rest2Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%82+%D0%9C%D0%BE%D0%BC%D0%B8%D0%BD%D0%B0+%D1%81%D1%8A%D0%BB%D0%B7%D0%B0+%D0%91%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D0%B8%D1%86%D0%B0';
-      hotel1.textContent = 'Хотел "Ком" – разположен в подножието на Стара планина, предлага уютни стаи и красива природа.';
-      hotel1Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%A5%D0%BE%D1%82%D0%B5%D0%BB+%D0%9A%D0%BE%D0%BC+%D0%91%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D0%B8%D1%86%D0%B0';
-      hotel2.textContent = 'Хотел "Берковица" – централно разположен хотел с удобства за туристи и бизнес пътуващи.';
-      hotel2Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%A5%D0%BE%D1%82%D0%B5%D0%BB+%D0%91%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D0%B8%D1%86%D0%B0';
+    case 'Югозападна България':
+      town = ['Мелник','Банско','Сандански','Кюстендил','София'];
       break;
-
-    case 'chiprovtsi':
-      townName.textContent = 'Чипровци';
-      rest1.textContent = 'Ресторант Кипро – Предлага традиционна българска кухня в уютна обстановка.';
-      rest1Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%82+%D0%9A%D0%B8%D0%BF%D1%80%D0%BE+%D0%A7%D0%B8%D0%BF%D1%80%D0%BE%D0%B2%D1%86%D0%B8';
-      rest2.textContent = 'Кафе-ресторант Канатица – Известен с вкусните си ястия и приятна атмосфера.';
-      rest2Link.href = 'https://www.google.com/maps/search/?api=1&query=%D0%9A%D0%B0%D1%84%D0%B5-%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%82+%D0%9A%D0%B0%D0%BD%D0%B0%D1%82%D0%B8%D1%86%D0%B0+%D0%A7%D0%B8%D0%BF%D1%80%D0%BE%D0%B2%D1';
-      hotel1.textContent = 'Къща за гости "Лиля" – уютна вила с басейн и барбекю, разположена в с. Горна Ковачица, близо до Чипровци.';
-      hotel1Link.href = 'https://www.google.com/maps/search/?api=1&query=43.4333,22.8833';
-      hotel2.textContent = 'Хотел "Кипровец" – спокоен хотел в центъра на Чипровци с ресторант и изглед към планината.';
-      hotel2Link.href = 'https://www.google.com/maps/search/?api=1&query=43.3833,22.8833';
+    case 'Югоизточна България':
+      town = ['Бургас','Стара Загора','Ямбол','Сливен','Несебър'];
       break;
-
-      case 'kozloduy':
-        townName.textContent = 'Козлодуй';
-      
-        rest1.textContent = 'Ресторант При Дани – Уютно място с домашно приготвена българска кухня.';
-        rest1Link.href = 'https://www.google.com/maps/search/?api=1&query=Ресторант+При+Дани+Козлодуй';
-      
-        rest2.textContent = 'Пицария Верди – Популярна с вкусните си пици и паста.';
-        rest2Link.href = 'https://www.google.com/maps/search/?api=1&query=Пицария+Верди+Козлодуй';
-      
-        hotel1.textContent = 'Хотел Дунав – Тризвезден хотел с гледка към реката.';
-        hotel1Link.href = 'https://www.google.com/maps/search/?api=1&query=Хотел+Дунав+Козлодуй';
-      
-        hotel2.textContent = 'Къща за гости Виктория – Спокойно място за отдих и отдих.';
-        hotel2Link.href = 'https://www.google.com/maps/search/?api=1&query=Къща+за+гости+Виктория+Козлодуй';
-        break;
-
-    default:
-      townName.textContent = '';
-      rest1.textContent = '';
-      rest1Link.href = '';
-      rest2.textContent = '';
-      rest2Link.href = '' ;
-      hotel1.textContent = '';
-      hotel1Link.href = '';
-      hotel2.textContent = '';
-      hotel2Link.href = '';
   }
-});
+  displayingOptions(town);
+}
+
+function displayingOptions(town){
+  let i;
+  for(i=0; i<=5;i++){
+    document.querySelectorAll(`.city${i+1}`).forEach(function change(item){
+                item.innerText = `${town[i]}`;
+                item.value=  `${town[i]}`
+                console.log(town[i]);
+            })
+    }
+  }
+
+function createObjectsCities (){
+
+}
+
+/*function city() {
+  let selectedCity = document.querySelector('.selectCity').value;
+
+  console.log(selectedCity);
+  let townName = document.getElementById('townName');
+  let rest1 = document.getElementById('rest1');
+  let rest1Link = document.getElementById('rest1Link');
+  let rest2 = document.getElementById('rest2');
+  let rest2Link = document.getElementById('rest2Link');
+  let hotel1 = document.getElementById('hotel1');
+  let hotel1Link = document.getElementById('hotel1Link');
+  let hotel2 = document.getElementById('hotel2');
+  let hotel2Link = document.getElementById('hotel2Link');
+
+  switch(selectedCity){
+    case 'Видин':
+      rest1.innerText = "Ресторант Бонония – С изглед към Дунав и разнообразно меню.";
+      rest1Link.innerText = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.528374944633!2d22.879178648820425!3d43.9857267949507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4753798530ae4697%3A0x504888736e737c29!2z0KDQtdGB0YLQvtGA0LDQvdGCINCR0L7QvdC-0L3QuNGP!5e0!3m2!1sbg!2sbg!4v1747217141841!5m2!1sbg!2sbg';
+      rest2.innerText = 'Ресторант Телеграф Капия – Традиционна кухня в автентична обстановка.';
+      rest2Link.innerText = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.528374944633!2d22.879178648820425!3d43.9857267949507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4753798530ae4697%3A0x504888736e737c29!2z0KDQtdGB0YLQvtGA0LDQvdGCINCR0L7QvdC-0L3QuNGP!5e0!3m2!1sbg!2sbg!4v1747218702586!5m2!1sbg!2sbg';
+
+      hotel1.innerText = 'Хотел Ровно – Централно разположен хотел с добра оценка от гостите.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Семеен хотел Анна-Кристина – Предлага комфортно настаняване с висока оценка.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+    case 'Белоградчик':
+      rest1.innerText = "Ресторант Скалите – В хотел „Скалите“, предлага местна кухня.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Механа Белоградчик – Традиционни ястия в битов стил.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Хотел Скалите – Четиризвезден хотел в центъра на града с удобства за релакс.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Hotel Fort o Bel – Съчетание от комфорт и красива гледка към природата.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Берковица':
+      rest1.innerText = "Ресторант Воденицата – Традиционна българска кухн";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Кафе-ресторант Централ – Класическа европейска и българска кухня.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Хотел "Ком" – Разположен в подножието на Стара планина, предлага уютни стаи и красива природа.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Хотел "Берковица" – Централно разположен хотел с удобства за туристи и бизнес пътуващи.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Чипровци':
+      rest1.innerText = "Ресторант „При Иван“ – Домашно приготвена храна и уютна атмосфера.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Механа Чипровци – Местни специалитети.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Хотел Кипровец – Разположен в центъра на града, предлага комфортно настаняване.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Бутик Хотел Илица – Бутиков хотел в близост до Чипровци с модерни удобства.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Козлодуй':
+      rest1.innerText = "Ресторант Комплекс Радецки – Българска кухня и дунавска риба.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Клуб-ресторант Дунав – Класическа атмосфера и местни ястия.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Комплекс Радецки – Хотел-ресторант на брега на Дунав с историческо значение.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'By The River Hotel – Модерен хотел с удобства и красива гледка.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+      
+
+      case 'Шумен':
+      rest1.innerText = "Gourmet Nirvana – Изискан ресторант с разнообразно меню.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Popsheytanova Kushta – Традиционна българска кухня в уютна обстановка.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Хотел Роял – Модерен и уютен, близо до центъра.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Family Art Hotel Nirvana – Артистична атмосфера, стил и комфорт.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Варна':
+      rest1.innerText = "Staria Chinar – Cherno More – Барбекю и европейска кухня.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Happy Център Варна – Популярен с разнообразно и достъпно меню.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Комплекс Хоризонт – В Морската градина, с гледка и близост до плажа.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Хотел Виктория – Бутиков, комфортен и централно разположен.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Велико Търново':
+      rest1.innerText = "Shtastliveca – Модерен интериор с българска кухня.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Ego Pizza & Grill – Пица и грил в приятна атмосфера.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Хотел Янтра – С изглед към Царевец, със СПА и класически стил.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Boutique Hotel Tsarevets – Елегантен и романтичен бутиков хотел.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Силистра':
+      rest1.innerText = "Ресторант Дунав – Рибни специалитети с изглед към реката.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Механа Силистра – Традиционна българска кухня в битов стил.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Хотел Дръстър – Луксозен хотел до Дунав с историческа тематика.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Хотел Силистра – Уютен и удобен за бизнес и туризъм.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Добрич':
+      rest1.innerText = "Ресторант Старият Добрич – Традиционна кухня в историческа обстановка.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Ресторант България – Местни специалитети и уют.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Хотел България – Традиционен стил в центъра на града.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Хотел Добруджа – Удобен и спокоен престой.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+
+      case 'Мелник':
+      rest1.innerText = "Механа Мелник – Традиционна кухня и местни вина.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Хотел Болярска къща – Домашен уют с красива гледка.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Хотел Мелник – Възрожденски стил в най-малкия град.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Хотел Болярска къща – Домашен уют с красива гледка.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Банско':
+      rest1.innerText = "Механа Дедо Пене – Класическа българска битова кухня.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Ресторант Леонардо – Италианска гурме кухня.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Кемпински Хотел Гранд Арена – 5-звезден лукс с отличен СПА център.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Хотел Лъки Банско – Модерен апартаментен хотел с много удобства.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Сандански':
+      rest1.innerText = "Ресторант Сандански – Местни специалитети и уютна обстановка.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Механа Златен Рог – Богато меню в битов стил.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Парк Хотел Пирин – СПА хотел в подножието на Пирин.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Хотел Свети Никола – Централен хотел с добра кухня и удобства.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Кюстендил':
+      rest1.innerText = "Вила Кюстендил – Изискано меню с гурме ястия.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Механа Чифлика – Традиционна българска кухня.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Хотел Стримон Гардън СПА – Луксозен СПА и уелнес хотел.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Хотел Велбъжд – Класически градски хотел.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'София':
+      rest1.innerText = "Ресторант Саса – Международна кухня с модерна атмосфера.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Хаджидрагановите къщи – Българска кухня в автентичен стил.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Sense Hotel Sofia – Модерен 5-звезден хотел с панорамен бар.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Hotel Niky – Уютен хотел в центъра с удобства за туристи и бизнес.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+
+      case 'Бургас':
+      rest1.innerText = "Happy Bar & Grill – Популярна верига с богато меню.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Ресторант „Нептун“ – Морски деликатеси край брега.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Hotel Bulgaria Burgas – Централен хотел с панорамна гледка.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Aqua Hotel – Модерен хотел с вътрешен басейн и СПА.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Стара Загора':
+      rest1.innerText = "Щастливеца – Разнообразна кухня и изискана атмосфера.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Зеленият хълм – Традиционна кухня с красива гледка.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Park Hotel Stara Zagora – Луксозен хотел край езеро.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Hotel Elegance – Бутиков стил и модерни удобства.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Ямбол':
+      rest1.innerText = "Ресторант „Тракия“ – Класическа българска кухня.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Ресторант „Класик“ – Модерна европейска кухня.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Hotel Diana Palace – Модерен хотел с ресторант.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Hotel Tundzha – Градски хотел с класически стил.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Сливен':
+      rest1.innerText = "Ресторант Сливен – Българска кухня в традиционен стил.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Ресторант Национал – Популярен сред местните, с разнообразно меню.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Hotel Park Central – Удобен и модерен хотел в центъра.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Hotel Imperia – Тихо и комфортно място за престой.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+
+      case 'Несебър':
+      rest1.innerText = "Ресторант Стария Несебър – Морска кухня с гледка към морето.";
+      rest1Link.innerText = 'wretryftguh';
+      rest2.innerText = 'Ресторант Hemingway – Местни специалитети и уютна атмосфера.';
+      rest2Link.innerText = 'wretryftguh';
+
+      hotel1.innerText = 'Sol Nessebar Palace – All-inclusive хотел на брега с водни атракции.';
+      hotel1Link.innerText = 'wretryftguh';
+      hotel2.innerText = 'Hotel St. Stefan – Бутиков хотел в Стария град с морска гледка.';
+      hotel2Link.innerText = 'wretryftguh';
+      break;
+  }
+   if (hotel1Link !== "") {
+        hotel1Link.src = hotel1Link;
+    }
+
+  if (hotel2Link !== "") {
+        hotel2Link.src = hotel2Link;
+    }
+
+  if (rest1Link !== "") {
+        rest1Link.src = rest1Link;
+    }
+
+  if (rest2Link !== "") {
+        rest2Link.src = rest2Link;
+    }
+}

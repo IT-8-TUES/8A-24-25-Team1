@@ -1,21 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>City Selector</title>
-    </head>
-    <body>
-        <h1>Хотели за всеки град</h1>
-        <select onchange="location = this.value;">
-            <option value="Northwestern.html">Северозападна България</option>
-            <option value="Northeast.html">Североизточна България</option>
-            <option value="Southwest.html">Югозападна България</option>
-            <option value="Southeast.html">Югоизточна България</option>
-        </select>
-        
-        
-        
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Северозападна България</title>
+    <link rel="stylesheet" href="teo.css">
+</head>
+<body>
+    <h1>Избери град</h1>
+    <select id="region" onchange="region();">
+        <option selected disabled hidden value=""> Избери град </option>
+        <option value="Region1">Северозападна България</option>
+        <option value="Region2">Североизточна България</option>
+        <option value="Region3">Югозападна България</option>
+        <option value="Region4">Югоизточна България</option>
+    </select>
 
-        <script src="recomondation.js"></script>
-    </body>
+    <select class="selectCity"  onchange="city();">
+        <option selected disabled hidden value=""> Избери град </option>
+        <option class="city1" value="city1"></option>
+        <option class="city2" value="city2"></option>
+        <option class="city3" value="city3"></option>
+        <option class="city4" value="city4"></option>
+        <option class="city5" value="city5"></option>
+    </select>
+
+        <div class="tabs">
+            <input type="radio" id="tabRest" name="tabs" checked="checked">
+            <label for="tabRest">Ресторанти</label>
+            <div class="tab">
+                <h1 id="rest1"></h1>
+                <iframe id="rest1Link"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h1 id="rest2"></h1>
+                <iframe id="rest2Link"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <input type="radio" id="tabHotel" name="tabs">
+            <label for="tabHotel">Хотели</label>
+            <div class="tab">
+                <h1 id="hotel1"></h1>
+                <div><iframe id="hotel1Link"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h1 id="hotel2"></h1>
+                <iframe id="hotel2Link"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+        </div>
+    <script src="recomondation.js"></script>
+</body>
 </html>
