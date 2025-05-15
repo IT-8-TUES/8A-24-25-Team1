@@ -118,6 +118,14 @@ nav a:hover {
     border-radius: 0.5em;
   }
   
+
+  .trip-image {
+    height: 22em;
+    width: auto;
+    border-radius: 0.5em;
+    box-shadow: 0 0.3125em 0.625em rgba(0, 0, 0, 0.1);
+  }
+
   .trip-info h3 {
     color: rgb(53, 158, 88);
   }
