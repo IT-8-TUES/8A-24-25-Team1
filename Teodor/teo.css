@@ -1,9 +1,9 @@
 .tabs {
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 200em;
     margin: 50px auto;
-    padding: 25px;
+    padding: 1em;
 }
 
 .tabs input[type="radio"]{
