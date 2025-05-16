@@ -255,46 +255,74 @@ function valueSelector(dayNum) {
 let count = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 // Функция за добавяне на градове
 function addSight(dayNum) {
+    let i;
     const townSelectorValue = document.getElementById(`day${dayNum}-town`).value;
     if(townSelectorValue !== "no-value") {
-        
-        count[dayNum-1]++;
+    count[dayNum-1]++;
+    console.log(count[dayNum-1]);
 
-        if(count[dayNum-1] <= 3) {
-            const container = document.getElementById(`day${dayNum}`);
+    if(count[dayNum-1] <= 3) {
+        const container = document.getElementById(`day${dayNum}`);
 
-            const newSightSelector = document.createElement("select");
-            newSightSelector.id = `day${dayNum}-sights${count[dayNum-1]}`;
+        const newSightSelector = document.createElement("select");
+        newSightSelector.id = `day${dayNum}-sights${count[dayNum-1]}`;
 
-            const labelSight = document.createElement("label");
-            labelSight.textContent = 'Забележителност: ';
+        const labelSight = document.createElement("label");
+        labelSight.textContent = "Забележителност: ";
+        labelSight.id = `day${dayNum}-label${count[dayNum-1]}`;
 
-            const newLine = document.createElement("br");
+        const newLine = document.createElement("br");
+        newLine.id = `day${dayNum}-br${count[dayNum-1]}`;
+        const addButton = document.getElementById(`add-button${dayNum}`);
+        const removeButton = document.getElementById(`remove-button${dayNum}`);
+        for(i = 0;i < 3;i++) {
+            const sightOption = document.createElement("option");
 
-            const addButton = document.createElement("button");
-            addButton.textContent = '+';
-            addButton.id = `add-button${dayNum}`;
-            for(i = 0;i < 3;i++) {
-                const sightOption = document.createElement("option");
+            sightOption.value = `sight${i+1}`;
+            
+            const TextOption = document.createTextNode(`${sights[i]}`);
+            sightOption.appendChild(TextOption);
 
-                sightOption.value = `sight${i+1}`;
-                
-                const TextOption = document.createTextNode(`${sights[i]}`);
-                sightOption.appendChild(TextOption);
-
-                newSightSelector.appendChild(sightOption);
-            }
-            container.appendChild(newLine);
-            container.appendChild(labelSight);
-            container.appendChild(newSightSelector);
-            container.appendChild(addButton);
-
-            addButton.addEventListener('click', function() {
-                console.log(`The dayNum is ${dayNum}`)
-                addSight(dayNum);
-
-            });
+            newSightSelector.appendChild(sightOption);
         }
-        else alert('Можете да си добавите най-много 2 забележителности на ден');
+        container.appendChild(newLine);
+        container.appendChild(labelSight);
+        container.appendChild(newSightSelector);
+        container.appendChild(addButton);
+        container.appendChild(removeButton);
+    }
+    else alert('Можете да си добавите най-много 2 забележителности на ден');
+    
+}
+}
+
+// Функция за премахване на градове
+function removeSight(dayNum) {
+    let i;
+    const townSelectorValue = document.getElementById(`day${dayNum}-town`).value;
+    if(townSelectorValue !== "no-value") {
+
+    if(count[dayNum-1] <= 3 && count[dayNum-1] >= 0 ) {
+        const container = document.getElementById(`day${dayNum}`);
+
+        const newSightSelector = document.getElementById(`day${dayNum}-sights${count[dayNum-1]}`);
+
+        const labelSight = document.getElementById(`day${dayNum}-label${count[dayNum-1]}`);
+
+        const newLine = document.getElementById(`day${dayNum}-br${count[dayNum-1]}`);
+
+        const addButton = document.getElementById(`add-button${dayNum}`);
+        const removeButton = document.getElementById(`remove-button${dayNum}`);
+        
+        container.removeChild(newLine);
+        container.removeChild(labelSight);
+        container.removeChild(newSightSelector);
+        container.appendChild(addButton);
+        container.appendChild(removeButton);
+        console.log(count[dayNum - 1]);
+        count[dayNum - 1]--;
+    }
+    else alert('Трябва да имате поне една забележителност на ден');
+
     }
 }
