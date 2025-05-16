@@ -1,0 +1,61 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Optima', sans-serif;
+  background-color: whitesmoke;
+}
+
+.menu {
+  background-color: #3f635d;
+  color: white;
+  padding: 1.25em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1.25em;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.625em 1.25em;
+  background-color:  #3f635d;;
+  color: white;
+  border-radius: 0.25em;
+  font-size: 1em;
+  transition: background-color 0.5s ease;
+}
+
+nav a:hover {
+  background-color:  #2f4945;
+}
+
+
+.map-table {
+  border-collapse: collapse;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-table td {
+  padding: 0em;
+  margin: 0em;
+}
+
+.map-table img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

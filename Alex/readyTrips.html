@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Готови екскурзии</title>
+    <link rel="stylesheet" href="readyTrips.css">
+    <script src="readyTrips.js" defer></script>
+</head>
+<body>
+    <div class="menu">
+        <h1>Готови екскурзии</h1>
+        <nav>
+            <a href="#">#</a>
+            <a href="#">#</a>
+            <a href="#">#</a>
+        </nav> 
+    </div>
+    <div class="enter-region">
+        <div>
+            <p>Регион:</p>
+            <select id="region">
+                <option value="" disabled selected hidden>Изберете регион</option>
+                <option value="Северозападна България">Северозападна България</option>
+                <option value="Североизточна България">Североизточна България</option>
+                <option value="Югозападна България">Югозападна България</option>
+                <option value="Югоизточна България">Югоизточна България</option>
+            </select>
+            <div class="enter-date">
+                <p>Дата:</p>
+                <input type="date" id="start-date">
+                <p> - </p>
+                <input type="date" id="end-date">
+            </div>
+            <button onclick="regionSelect()">Потвърди</button>
+        </div>
+        <br>
+        <div>
+            <output id="textContent"></output>
+            <div id="tripList"></div>
+        </div>
+    </div>
+</body>
+</html>
