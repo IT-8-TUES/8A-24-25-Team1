@@ -1,3 +1,7 @@
+#planning {
+    display: flex;
+
+}
 .enter-date {
     display: flex;
     flex-direction: row;

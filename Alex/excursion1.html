@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екскурзия</title>
+    <link rel="stylesheet" href="excursion.css">
+    <script src="gallery.js" defer></script>
+</head>
+<body>
+    <div class="menu">
+        <h1>Име на екскурзия</h1>
+        <nav>
+            <a href="#">#</a>
+            <a href="#">#</a>
+            <a href="#">#</a>
+        </nav> 
+    </div>
+
+    <div class="trip-container">
+        <h2>Име на екскурзията</h2>
+        <p>Дестинации: <span id="destination">---</span></p>
+        <p>Дати: <span id="dates">---</span></p>
+        <p>Нощувки: <span id="hotels">---</span></p>
+        <p>Продължителност: <span id="duration">---</span></p>
+        <p>Цена: <span id="price">---</span></p>
+        
+        <button id="bookTrip">Резервирай</button>
+        <br><br>
+        <div class="image-gallery">
+            <button class="prev" onclick="changeImage(-1)"><</button>
+            <img id="galleryImage" src="Images/noimage.jpg" alt="Снимки от екскурзията">
+            <button class="next" onclick="changeImage(1)">></button>
+        </div>
+
+        <div class="trip-info">
+            <h3>Информация за екскурзията:</h3>
+            <p id="infoText">Информация</p>
+        </div>
+    </div>
+</body>
+</html>

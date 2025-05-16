@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екскурзия 5</title>
+    <link rel="stylesheet" href="excursion.css">
+    <script src="gallery.js" defer></script>
+</head>
+<body>
+    <div class="menu">
+        <h1>Рила - Пирин</h1>
+        <nav>
+            <a href="#">#</a>
+            <a href="#">#</a>
+            <a href="#">#</a>
+        </nav> 
+    </div>
+
+    <div class="trip-container">
+        <h2>Рила - Пирин</h2>
+        <p>Дестинации: <span id="destination">Рилски манастир, Седемте Рилски езера, Връх Мальовица, Връх Вихрен, Попово езеро, Байкушевата мура</span></p>
+        <p>Дати: <span id="dates">2025-05-19 - 2025-05-25, 2025-06-02 - 2025-06-08, 2025-06-12 - 2025-06-18</span></p>
+        <p>Нощувки: <span id="hotels">Благоевград (3 нощи), Банско (3 нощи)</span></p>
+        <p>Продължителност: <span id="duration">6 дни</span></p>
+        <p>Цена: <span id="price">---</span></p>
+        
+        <button id="bookTrip">Резервирай</button>
+        <br><br>
+        <div class="image-gallery">
+            <button class="prev" onclick="changeImage(-1)"><</button>
+            <img id="galleryImage" src="Images/noimage.jpg" alt="Снимки от екскурзията">
+            <button class="next" onclick="changeImage(1)">></button>
+        </div>
+
+        <div class="trip-info">
+            <h3>Информация за екскурзията:</h3>
+            <p id="infoText">
+                В тази екскурзия ще изследвате невероятната природа на Рила и Пирин, като започнем с Рилския манастир, духовния и исторически символ на България. Ще се насладим на Седемте Рилски езера, едно от най-впечатляващите природни чудеса на страната. Пътят ще ни отведе до връх Мальовица, предизвикателство за планинарите, преди да се отправим към Благоевград за нощувка и почивка. В Пирин планина ще покорим връх Вихрен, ще посетим живописното Попово езеро и ще разгледаме Байкушевата мура, едно от най-старите дървета в България. В Банско ще имаме възможност да се насладим на традиционната кухня и уникалната атмосфера на региона.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
