@@ -5,11 +5,11 @@ html {
 body {
   margin: 0;
   font-family: 'Optima', sans-serif;
-  background-color: rgba(245, 233, 215, 0.932);
+  background-color: whitesmoke;
 }
 
 .menu {
-  background-color: rgb(53, 158, 88);
+  background-color: #3f635d;
   color: white;
   padding: 1.25em;
   text-align: center;
@@ -30,7 +30,7 @@ nav {
 nav a {
   text-decoration: none;
   padding: 0.625em 1.25em;
-  background-color:  rgb(53, 158, 88);
+  background-color:  #3f635d;;
   color: white;
   border-radius: 0.25em;
   font-size: 1em;
@@ -38,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: forestgreen;
+  background-color:  #2f4945;
 }
 
 
