@@ -258,10 +258,9 @@ function addSight(dayNum) {
     let i;
     const townSelectorValue = document.getElementById(`day${dayNum}-town`).value;
     if(townSelectorValue !== "no-value") {
-    count[dayNum-1]++;
-    console.log(count[dayNum-1]);
 
-    if(count[dayNum-1] <= 3) {
+    if(count[dayNum-1] < 3) {
+        count[dayNum-1]++;
         const container = document.getElementById(`day${dayNum}`);
 
         const newSightSelector = document.createElement("select");
@@ -275,6 +274,16 @@ function addSight(dayNum) {
         newLine.id = `day${dayNum}-br${count[dayNum-1]}`;
         const addButton = document.getElementById(`add-button${dayNum}`);
         const removeButton = document.getElementById(`remove-button${dayNum}`);
+
+        const sightOptionNoValue = document.createElement("option");
+        sightOptionNoValue.value = `option-no-value`;
+        sightOptionNoValue.setAttribute("disabled", "");
+        sightOptionNoValue.setAttribute("selected", "");
+        sightOptionNoValue.setAttribute("hidden", "");
+        const TextOptionNoValue = document.createTextNode(`Изберете забележителност`);
+        sightOptionNoValue.appendChild(TextOptionNoValue);
+        newSightSelector.appendChild(sightOptionNoValue);
+
         for(i = 0;i < 3;i++) {
             const sightOption = document.createElement("option");
 
@@ -302,7 +311,7 @@ function removeSight(dayNum) {
     const townSelectorValue = document.getElementById(`day${dayNum}-town`).value;
     if(townSelectorValue !== "no-value") {
 
-    if(count[dayNum-1] <= 3 && count[dayNum-1] >= 0 ) {
+    if(count[dayNum-1] > 1 ) {
         const container = document.getElementById(`day${dayNum}`);
 
         const newSightSelector = document.getElementById(`day${dayNum}-sights${count[dayNum-1]}`);
@@ -319,7 +328,6 @@ function removeSight(dayNum) {
         container.removeChild(newSightSelector);
         container.appendChild(addButton);
         container.appendChild(removeButton);
-        console.log(count[dayNum - 1]);
         count[dayNum - 1]--;
     }
     else alert('Трябва да имате поне една забележителност на ден');
