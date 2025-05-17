@@ -7,13 +7,15 @@ function regionSelect() {
     var endDate = document.getElementById("end-date").value;
 
     function formatDate(dateString) {
-        let [year, month, day] = dateString.split("-");
+        let date = new Date(dateString);
+        let day = String(date.getDate()).padStart(2, '0');
+        let month = String(date.getMonth() + 1).padStart(2, '0');
+        let year = date.getFullYear();
         return `${day}.${month}.${year} г.`;
     }
 
     output.textContent = "";
 
-    // ✅ Check if a region is selected
     if (!region) {
         output.textContent = "Моля, въведете регион.";
         tripList.innerHTML = "";
