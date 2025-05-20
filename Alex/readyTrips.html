@@ -28,12 +28,15 @@
                 <option value="Югоизточна България">Югоизточна България</option>
             </select>
             <div class="enter-date">
-                <p>Дата:</p>
-                <input type="date" id="start-date">
-                <p> - </p>
-                <input type="date" id="end-date">
-            </div>
-            <button onclick="regionSelect()">Потвърди</button>
+                <div>
+                    <label for="start-date">Начална дата</label>
+                    <input placeholder="Въведете начална дата" type="datetime-local" id="start-date">
+                </div>
+                <div>
+                    <label for="end-date">Крайна дата</label>
+                    <input placeholder="Въведете крайна дата" type="datetime-local" id="end-date">
+                </div>
+                <button onclick="regionSelect()">Потвърди</button>
         </div>
         <br>
         <div>

@@ -81,11 +81,38 @@ nav a:hover {
 }
 
 .enter-date {
-  display: flex;
-  align-items: center;
-  gap: 0.625em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:10%;
 }
 
+#start-date {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap:8.5%;
+    margin:4px;
+} 
+
+#end-date {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap:8.5%;
+    margin:4px;
+}
+
+.day {
+    display: none;
+}
 .image-gallery {
   display: flex;
   align-items: center;
