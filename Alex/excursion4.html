@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екскурзия 4</title>
+    <link rel="stylesheet" href="excursion.css">
+    <script src="gallery.js" defer></script>
+</head>
+<body>
+    <div class="menu">
+        <h1>Сандански - Велинград</h1>
+        <nav>
+            <a href="#">#</a>
+            <a href="#">#</a>
+            <a href="#">#</a>
+        </nav> 
+    </div>
+
+    <div class="trip-container">
+        <h2>Сандански - Велинград</h2>
+        <p>Дестинации: <span id="destination">Сандански, Петрич, Рупите, Велинград</span></p>
+        <p>Дати: <span id="dates">2025-05-17 - 2025-05-22, 2025-05-31 - 2025-06-05, 2025-06-10 - 2025-06-15</span></p>
+        <p>Нощувки: <span id="hotels">Сандански (2 нощи), Велинград (3 нощи)</span></p>
+        <p>Продължителност: <span id="duration">5 дни</span></p>
+        <p>Цена: <span id="price">---</span></p>
+        
+        <button id="bookTrip">Резервирай</button>
+        <br><br>
+        <div class="image-gallery">
+            <button class="prev" onclick="changeImage(-1)"><</button>
+            <img id="galleryImage" src="Images/noimage.jpg" alt="Снимки от екскурзията">
+            <button class="next" onclick="changeImage(1)">></button>
+        </div>
+
+        <div class="trip-info">
+            <h3>Информация за екскурзията:</h3>
+            <p id="infoText">
+                Тази екскурзия ще ви отведе до едни от най-забележителните дестинации в България. Ще посетите Сандански, известен със своите минерални извори и красивия парк „Свети Врач“, който предлага спокойствие и зелени алеи. В Петрич ще се потопите в мистичната атмосфера на Рупите, мястото, свързано с пророчицата Ванга, и ще разгледате античния град Хераклея Синтика. Във Велинград ще откриете неговите прочути минерални извори, както и карстовия извор Клептуза – място за отдих и разходки сред природата.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
