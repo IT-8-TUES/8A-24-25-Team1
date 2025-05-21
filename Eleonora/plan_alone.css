@@ -57,6 +57,7 @@
 #submit-button {
     padding: 0.70em;
     border-radius: 10%;
+    align-self: flex-end;
 }
 
 .planning-trip {
