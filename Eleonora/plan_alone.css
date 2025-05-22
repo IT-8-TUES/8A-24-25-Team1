@@ -8,6 +8,7 @@
     background-color: white;
     box-shadow: 0 0.625em 1.25em rgba(0, 0, 0, 0.1);
     border-radius: 0.5em;
+
 }
 
 .enter-date {
@@ -54,9 +55,19 @@
     margin: 0.25em;
 }
 
+#submit-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 #submit-button {
-    padding: 0.70em;
+    padding: 0.50em;
     border-radius: 10%;
+    align-self: flex-end;
+    width: 5.625em;
+    font-size: 1.25em;
 }
 
 .planning-trip {
