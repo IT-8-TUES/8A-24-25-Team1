@@ -1,24 +1,37 @@
-let difference = 0;
 // Функция за изчисляване на дните почивка
 function holidayTime() {
-    let startDate = new Date(document.querySelector('#start-date-input').value);
-    let endDate = new Date(document.querySelector('#end-date-input').value);
+    let days = 0;
+    const startDate = new Date(document.querySelector('#start-date-input').value);
+    const endDate = new Date(document.querySelector('#end-date-input').value);
 
+    if(isNaN(startDate.getTime()) || isNaN(endDate.getTime())) {
+        alert('Въведете валидни начална и крайна дата.');
+        return 0;
+    }
     
-    difference = (endDate - startDate) / (1000 * 60 * 60 * 24);
-
-    if(difference > 10 || difference < 1) {
-        alert('Почивката трябва да е най-малко 1 ден и най-много 10 дена');
-        difference = 0;
+    if (startDate > endDate) {
+        alert("Началната дата трябва да е преди крайната.");
+        return 0;
+    }  
+    
+    days = (endDate - startDate) / (1000 * 60 * 60 * 24);
+    
+    if(days > 10 || days < 1) {
+        alert('Почивката трябва да е най-малко 1 ден и най-много 10 дена.');
+        days = 0;
+        return 0;
     }
 
-    return difference;
+    return days;
 }
+
 // Функция за определяне на региона и извеждане на името на екскурзията
+
 let regionName = '';
 function region() {
     
-    let selectedRegion = document.getElementById('region').value;
+    const days = holidayTime();
+    const selectedRegion = document.getElementById('region').value;
 
     switch(selectedRegion) {
         case 'Northwest':
@@ -34,36 +47,32 @@ function region() {
             regionName = 'Югоизточна България';
             break;
         case '':
-            regionName = null;
-            alert('Изберете регион');
+            alert('Изберете регион.');
             break;
     }
 
-    if(difference > 0 && regionName !== null) {
-        document.getElementById('excursion-name').innerText = `${difference}-дневна екскурзия в ${regionName}`;
-        showingDays();
-        towns(regionName);
-        displayTowns();
+    if(days > 0 && regionName !== '') {
+        document.getElementById('excursion-name').innerText = `${days}-дневна екскурзия в ${regionName}`;
+        showingDays(days);
+        towns();
     }
 
 }
 // Функция за показване на елемнтите - дни
 
-function showingDays() {
+function showingDays(days) {
     let i = 1;
 
-    for(i = 1; i <= difference; i++) {
+    for(i = 1; i <= days; i++) {
         document.getElementById(`day${i}`).style.display = "block";
     }
-
-    
 }
-
-let townList = [];
 
 // Функция за определяне на градовете спрямо региона
 
-function towns(regionName) {
+function towns() {
+    console.log(regionName)
+    let townList = [];
     switch(regionName) {
         case 'Северозападна България':
             townList = ['Видин', 'Белоградчик', 'Берковица', 'Чипровци', 'Козлодуй'];
@@ -78,14 +87,15 @@ function towns(regionName) {
             townList = ['Бургас', 'Стара Загора', 'Хасково', 'Сливен', 'Несебър'];
             break;
     }
+    displayTowns(townList);
 }
 
 //Функция за показване на градовете като опции
 
-function displayTowns() {
+function displayTowns(townList) {
     let i;
     
-    for(i = 0; i < 5; i++) {
+    for(i = 0; i < townList.length; i++) {
         document.querySelectorAll(`.town-option${i+1}`).forEach(
             function(item) {
                 item.innerText = townList[i];
@@ -220,8 +230,6 @@ function defineSights(selectorTownValue) {
 let dayNum = 0;
 // Функция за показване на забележителностите
 function displaySights(dayNum) {
-    console.log('The function is started');
-
     let selectorTownValue = document.querySelector(`#day${dayNum}-town`).value;
     defineSights(selectorTownValue);
 
