@@ -2,20 +2,33 @@
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>Северозападна България</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторанти и хотели</title>
     <link rel="stylesheet" href="teo.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../index.css">
 </head>
 <body>
-    <h1>Избери град</h1>
+    <header class="menu">
+        <h1>Планирай сам</h1>
+        <nav>
+            <a href="../Alex/index.html">Начало</a>
+            <a href="../Alex/readyTrips.html">Готови екскурзии</a>
+            <a href="../Teodor/recomondation.html">Хотели и ресторанти</a>
+        </nav>
+    </header>
+    <br>
+    <label>Избери регион</label>
+    <br>
     <select id="region" onchange="region();">
-        <option selected disabled hidden> Избери град </option>
+        <option selected disabled hidden value="no-value"> Избери регион </option>
         <option value="Region1">Северозападна България</option>
         <option value="Region2">Североизточна България</option>
         <option value="Region3">Югозападна България</option>
         <option value="Region4">Югоизточна България</option>
     </select>
-
+    <br>
+    <label>Избери град</label>
+    <br>
     <select class="selectCity"  onchange="printHotels();">
         <option selected disabled hidden> Избери град </option>
         <option class="city1" value="city1"></option>

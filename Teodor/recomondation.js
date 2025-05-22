@@ -85,6 +85,8 @@ let rest2 = {
   img: ''
 };
 
+
+
 function printHotels() {
   let selectedCity = document.querySelector('.selectCity').value;
   
@@ -507,4 +509,19 @@ function printHotels() {
   document.getElementById('rest2').textContent = rest2.name;
   document.getElementById('rest2Maps').src = rest2.location;
   document.getElementById('rest2Img').src = rest2.img;
+}
+
+
+document.addEventListener("DOMContentLoaded", load);
+document.addEventListener("change", load);
+
+function load(){
+  let selectedRegion = document.getElementById('region').value;
+  let selectCity = document.querySelector('.selectCity');
+
+  if (selectedRegion == "no-value") {
+    selectCity.disabled = true;
+  } else {
+    selectCity.disabled = false;
+  }
 }
