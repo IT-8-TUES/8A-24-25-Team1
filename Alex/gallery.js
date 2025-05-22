@@ -52,7 +52,7 @@ const imageSets = {
         "Images/Bulgarian_National_Museum_of_History3.jpg",
         "Images/pernikmines.jpg",
         "Images/pernikmines2.jpg",
-        "Images/pernikkrepost.jpg",
+        "Images/pernikkrepost.jpg", 
         "Images/radomirmuseum.jpg",
         "Images/radomirmuseum2.jpg",
         "Images/svdimitarradomir.jpg",
