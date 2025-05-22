@@ -239,7 +239,7 @@ function displaySights(dayNum) {
     
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () =>  {
     for(dayNum = 1; dayNum <= 10; dayNum++) {
         valueSelector(dayNum);
     }
