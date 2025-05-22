@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 200em;
-    margin: 50px auto;
+    margin: 3em auto;
     padding: 1em;
 }
 
@@ -11,14 +11,14 @@
 }
 
 .tabs label {
-    padding: 25px;
+    padding: 1.5em;
     background: #fff;
     font-weight: bold;
 }
 
 .tabs .tab {
     width: 100%;
-    padding: 20px;
+    padding: 1em;
     background: #e2e2e2;
     order: 1;
     display: none;
@@ -31,3 +31,5 @@
 .tabs input[type="radio"]:checked + label {
     background: #e2e2e2;
 }
+
+

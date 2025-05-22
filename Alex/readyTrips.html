@@ -6,6 +6,7 @@
     <title>Готови екскурзии</title>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="readyTrips.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="readyTrips.js" defer></script>
 </head>
 <body>
@@ -46,5 +47,20 @@
             <div id="tripList"></div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/bg.js"></script> 
+    <!-- Зарежда българския езиков файл за Flatpickr -->
+    <script>
+        config = {
+            altInput: true,
+            altFormat: "F j, Y",
+            dateFormat: "Y-m-d",
+            locale: "bg",
+            //Мой формат за Date picker
+        }
+
+        flatpickr("input[type=datetime-local]", config);
+        // Свързам flatpickr с datetime-local input-ите
+    </script>
 </body>
 </html>

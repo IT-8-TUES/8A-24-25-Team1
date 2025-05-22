@@ -2,20 +2,33 @@
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>Северозападна България</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторанти и хотели</title>
     <link rel="stylesheet" href="teo.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../index.css">
 </head>
 <body>
-    <h1>Избери град</h1>
+    <header class="menu">
+        <h1>Планирай сам</h1>
+        <nav>
+            <a href="../Alex/index.html">Начало</a>
+            <a href="../Alex/readyTrips.html">Готови екскурзии</a>
+            <a href="../Teodor/recomondation.html">Хотели и ресторанти</a>
+        </nav>
+    </header>
+    <br>
+    <label>Избери регион</label>
+    <br>
     <select id="region" onchange="region();">
-        <option selected disabled hidden> Избери град </option>
+        <option selected disabled hidden value="no-value"> Избери регион </option>
         <option value="Region1">Северозападна България</option>
         <option value="Region2">Североизточна България</option>
         <option value="Region3">Югозападна България</option>
         <option value="Region4">Югоизточна България</option>
     </select>
-
+    <br>
+    <label>Избери град</label>
+    <br>
     <select class="selectCity"  onchange="printHotels();">
         <option selected disabled hidden> Избери град </option>
         <option class="city1" value="city1"></option>
@@ -31,17 +44,23 @@
             <div class="tab">
                 <h2 id="rest1"></h2>
                 <iframe id="rest1Maps"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img id = "rest1Img" alt="rest1" style="width: 40em; height: auto;" />
+     
                 <h2 id="rest2"></h2>
                 <iframe id="rest2Maps"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img id = "rest2Img" alt="rest2" style="width: 40em; height: auto;" />
             </div>
 
             <input type="radio" id="tabHotel" name="tabs">
             <label for="tabHotel">Хотели</label>
             <div class="tab">
-                <h2 id="hotel1"></h2>
+                <a id="hotel1link" href="" target="_blank"><h2 id="hotel1"></h2></a>
                 <iframe id="hotel1Maps"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h2 id="hotel2"></h2>
+                <img id = "hotel1Img" alt="Hotel1" style="width: 40em; height: auto;" />
+                
+                <a id="hotel2link" href="" target="_blank"><h2 id="hotel2"></h2></a>
                 <iframe id="hotel2Maps"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+                <img id = "hotel2Img" alt="Hotel2" style="width: 40em; height: auto;" />
             </div>
         </div>
     <script src="recomondation.js"></script>
