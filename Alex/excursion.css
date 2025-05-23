@@ -46,28 +46,11 @@ nav a:hover {
     border-radius: 0.5em;
   }
   
-  #bookTrip {
-    padding: 0.625em 1.25em;
-    background-color: rgb(53, 158, 88);
-    color: white;
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 0.5em;
-    transition: background-color 0.3s ease;
-}
-
-#bookTrip:hover {
-    background-color: forestgreen;
-}
-
-
-  
   .trip-info {
     margin-top: 1.5em;
     padding: 1em;
     background-color: rgba(240, 240, 240, 0.8);
-    border-left: 0.5em solid rgb(53, 158, 88);
+    border-left: 0.5em solid #3f635d;
     border-radius: 0.5em;
   }
   
@@ -79,8 +62,8 @@ nav a:hover {
     box-shadow: 0 0.3125em 0.625em rgba(0, 0, 0, 0.1);
   }
 
-  .trip-info h3 {
-    color: rgb(53, 158, 88);
+  .trip-info h3, h4 {
+    color: #3f635d;
   }
   
   .trip-info p {

@@ -24,14 +24,20 @@ const imageSets = {
         "Images/Excursion3-3.jpg"
     ],
     "excursion4": [
-        "Images/haskovo.jpg",
-        "Images/varna.jpg",
-        "Images/Melnik.jpg"
+        "Images/svvrach.jpg",
+        "Images/rupite.jpg",
+        "Images/vangahome.jpg",
+        "Images/svpetrarka.jpg",
+        "Images/sintika.jpg",
+        "Images/kleptuza.jpg"
     ],
     "excursion5": [
-        "Images/Excursion5-1.jpg",
-        "Images/Excursion5-2.jpg",
-        "Images/Excursion5-3.jpg"
+        "Images/rilskimanastir.jpg",
+        "Images/rilskiezera.jpg",
+        "Images/malovica.jpg",
+        "Images/vihren.jpg",
+        "Images/popovoezero.jpg",
+        "Images/baikushevamura.jpg"
     ],
     "excursion6": [
         "Images/Excursion6-1.jpg",

@@ -15,7 +15,7 @@
 }
 
 .image-gallery button {
-    background-color: rgb(53, 158, 88);
+    background-color: #3f635d;
     color: white;
     border: none;
     font-size: 1.5em;
@@ -26,7 +26,8 @@
 }
 
 .image-gallery button:hover {
-    background-color: forestgreen;
+    background-color: #2f4945;
+;
 }
 
 .image-gallery img:hover {
