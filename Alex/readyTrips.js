@@ -3,8 +3,8 @@ function regionSelect() {
     var output = document.getElementById("textContent");
     var tripList = document.getElementById("tripList");
 
-    var startDate = document.getElementById("start-date").value;
-    var endDate = document.getElementById("end-date").value;
+    var startDate = document.getElementById("start-date-input").value;
+    var endDate = document.getElementById("end-date-input").value;
 
     function formatDate(dateString) {
         let date = new Date(dateString);

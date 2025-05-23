@@ -26,7 +26,7 @@ nav {
 nav a {
   text-decoration: none;
   padding: 0.625em 1.25em;
-  background-color: #3f635d;
+  background-color:  #3f635d;;
   color: white;
   border-radius: 0.25em;
   font-size: 1em;
@@ -34,7 +34,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #2f4945;
+  background-color:  #2f4945;
 }
 
   .trip-container {

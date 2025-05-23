@@ -12,55 +12,58 @@
 <body>
     <header>
         <div class="menu">
-        <h1>Готови екскурзии</h1>
+            <h1>Готови екскурзии</h1>
             <nav>
                 <a href="#">#</a>
                 <a href="#">#</a>
                 <a href="#">#</a>
-            </nav> 
+            </nav>
         </div>
     </header>
-    <div class="enter-region">
-        <div>
-            <p>Регион:</p>
-            <select id="region">
-                <option value="" disabled selected hidden>Изберете регион</option>
-                <option value="Северозападна България">Северозападна България</option>
-                <option value="Североизточна България">Североизточна България</option>
-                <option value="Югозападна България">Югозападна България</option>
-                <option value="Югоизточна България">Югоизточна България</option>
-            </select>
+    <br>
+    <div id = "planning">
             <div class="enter-date">
-                <div>
-                    <label for="start-date">Начална дата</label>
-                    <input placeholder="Въведете начална дата" type="datetime-local" id="start-date">
+                <div id = "start-date">
+                    <label>Начална дата</label>
+                    <input placeholder="Въведете начална дата" type="datetime-local" id="start-date-input">
                 </div>
-                <div>
-                    <label for="end-date">Крайна дата</label>
-                    <input placeholder="Въведете крайна дата" type="datetime-local" id="end-date">
+                <div id = "end-date">
+                    <label>Крайна дата</label>
+                    <input placeholder="Въведете крайна дата" type="datetime-local" id="end-date-input">
                 </div>
-                <button onclick="regionSelect()">Потвърди</button>
-        </div>
-        <br>
-        <div>
+            </div>
+            <br>
+            <div class="enter-region">
+                <label class = "region-label">Регион</label>
+                <select id="region" >
+                    <option value = "" disabled selected hidden>Изберете регион</option>
+                    <option value="Northwest">Северозападна България</option>
+                    <option value="Northeast">Североизточна България</option>
+                    <option value="Southwest">Югозападна България</option>
+                    <option value="Southeast">Югоизточна България</option>
+                </select>
+                </div>
+                <div id = "submit-container">
+                <button id = "submit-button" onclick = "        
+                    region();
+                    ">Потвърди</button>
+                </div>
+            <div class = "planning-trip">
             <output id="textContent"></output>
             <div id="tripList"></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/bg.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/bg.js"></script>
     <!-- Зарежда българския езиков файл за Flatpickr -->
     <script>
-        config = {
+        const config = {
             altInput: true,
             altFormat: "F j, Y",
             dateFormat: "Y-m-d",
-            locale: "bg",
-            //Мой формат за Date picker
-        }
-
+            locale: "bg"
+        };
         flatpickr("input[type=datetime-local]", config);
-        // Свързам flatpickr с datetime-local input-ите
     </script>
 </body>
 </html>

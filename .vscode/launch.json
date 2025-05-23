@@ -7,8 +7,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "url": "Open new.html",
-            "webRoot": "${workspaceFolder}"
+            "url": "Open new.html"
         },
     ]
 }
