@@ -38,6 +38,7 @@ nav a {
 }
 
 nav a:hover {
+  text-decoration: none;
   background-color:  #2f4945;
 }
 
@@ -168,20 +169,20 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .link-group {
   color:black;
   display: flex;
   flex-direction: column;
-  margin: 1em 5em 1em 5em;
+  margin: 0.5em 3em 0.5em 3em;
 }
 
 a {
   color:black;
   text-decoration: none;
   font-weight: lighter;
-  text-decoration: underline;
 }
 
 a:hover {
@@ -207,4 +208,15 @@ a:hover {
   width: 100%;
   padding: 1em;
   gap:4em;
+}
+
+#contacts {
+  align-items:flex-start;
+  justify-content: center;
+  
+}
+
+.link-group p,
+.link-group a {
+  margin: 0.1em 0 0 0;
 }
