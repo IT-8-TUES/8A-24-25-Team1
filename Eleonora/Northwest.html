@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../Alex/index.css">
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="icon" type="image/x-icon" href="../Logo.jpg">
+        <link rel="stylesheet" href="../index.css">
         <link rel="stylesheet" href="../Alex/excursion.css">
         <title>Северозападна България</title>
     </head>
@@ -164,7 +166,16 @@
                         <p>Историческият музей в Козлодуй представя богата експозиция, посветена на участието на града в националноосвободителните борби. Основен акцент е поставен върху пристигането на Христо Ботев и неговата чета. В музея могат да се видят документи, оръжия, снимки и лични вещи, свързани с историята на региона и героичното минало.</p>
                 </div>
             </div>
+            
+            <div class="trip-info">
+            <h3>Снимки:</h3>
+            <div class="image-gallery">
+                <button class="prev" onclick="changeImage(-1)"><</button>
+                <img id="galleryImage" src="../Alex/Images/noimage.jpg" alt="Снимки от екскурзията" height="200em" width="200em" class="image-sight">
+                <button class="next" onclick="changeImage(1)">></button>
             </div>
+        </div>
+           </div> 
         </main>
         <footer>
         <div id = "footer-nav">

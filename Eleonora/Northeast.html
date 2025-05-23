@@ -3,8 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../Alex/index.css">
+        <link rel="stylesheet" href="../Alex/gallery.css">
+        <link rel="icon" type="image/x-icon" href="../Logo.jpg">
+        <link rel="stylesheet" href="../index.css">
+
         <link rel="stylesheet" href="../Alex/excursion.css">
+            <script src="gallery.js" defer></script>
         <title>Североизточна България</title>
     </head>
     <body>
@@ -174,7 +178,16 @@
                         <p>Най-големият и най-красивият парк в Добрич. Простира се на площ от около 430 дка и включва езера, зоокът, ботаническа градина, детски площадки и зони за спорт и пикник. Има богато растително разнообразие и е любимо място за разходки и отдих на местните жители. Паркът носи името на покровителя на града – Свети Георги.</p>
                 </div>
             </div>
+            <div class="trip-info">
+            <h3>Снимки:</h3>
+            <div class="image-gallery">
+                <button class="prev" onclick="changeImage(-1)"><</button>
+                <img id="galleryImage" src="../Alex/Images/noimage.jpg" alt="Снимки от екскурзията" height="200em" width="200em" class="image-sight">
+                <button class="next" onclick="changeImage(1)">></button>
             </div>
+        </div>
+            </div>
+            
         </main>
     <footer>
         <div id = "footer-nav">
