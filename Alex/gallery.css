@@ -1,0 +1,41 @@
+.image-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.image-gallery img {
+    width: 60%;
+    height: auto;
+    border-radius: 0.5em;
+    box-shadow: 0 0.3125em 0.625em rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery button {
+    background-color: rgb(53, 158, 88);
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease;
+}
+
+.image-gallery button:hover {
+    background-color: forestgreen;
+}
+.image-gallery img {
+  width: 60%;
+  height: auto;
+  border-radius: 0.5em;
+  box-shadow: 0 0.3125em 0.625em rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.02);
+}
