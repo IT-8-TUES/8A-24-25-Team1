@@ -25,6 +25,7 @@ function region() {
     getTowns(regionName);
 }
 
+
 let town = [];
 
 function getTowns(regionName){
@@ -87,8 +88,10 @@ let rest2 = {
 
 
 function printHotels() {
-  let selectedCity = document.querySelector('.selectCity').value;
   
+  let selectedCity = document.querySelector('.selectCity').value;
+
+
   switch(selectedCity) {
     case 'Видин':
       hotel1.name = "Хотел Ровно";
@@ -489,7 +492,8 @@ function printHotels() {
       rest2.img = "img/NesebarRest2.webp";
       break;
   }
-  
+
+
   document.getElementById('hotel1').innerText = hotel1.name;
   document.getElementById('hotel1Maps').src = hotel1.location;
   document.getElementById('hotel1Img').src = hotel1.img;
@@ -522,4 +526,5 @@ function load(){
   } else {
     selectCity.disabled = false;
   }
+
 }
