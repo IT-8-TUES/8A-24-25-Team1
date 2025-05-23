@@ -65,19 +65,16 @@ nav a:hover {
   background-color: #2f4945;
 }
 
-.enter-region {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 0.625em;
-  max-width: 70%;
-  margin-left: 5em;
-  margin-top: 1.25em;
-  margin: 2em auto;
-  padding: 1.5em;
-  background-color: white;
-  box-shadow: 0 0.625em 1.25em rgba(0, 0, 0, 0.1);
-  border-radius: 0.5em;
+#planning {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 70%;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: white;
+    box-shadow: 0 0.625em 1.25em rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
 }
 
 .enter-date {
@@ -110,9 +107,36 @@ nav a:hover {
     margin:4px;
 }
 
+.enter-region {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 0.25em;
+}
+
+
 .day {
     display: none;
 }
+
+#submit-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#submit-button {
+    padding: 0.50em;
+    border-radius: 10%;
+    align-self: flex-end;
+    width: 5.625em;
+    font-size: 1.25em;
+}
+
 .image-gallery {
   display: flex;
   align-items: center;
