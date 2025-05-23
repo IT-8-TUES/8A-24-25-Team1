@@ -38,36 +38,26 @@ const imageSets = {
         "Images/Excursion6-2.jpg",
         "Images/Excursion6-3.jpg"
     ],
-    "Southeast": [
+    "Southwest": [
         "Images/Vitosha.jpg",
-        "Images/Vitosha2.jpg",
         "Images/Chernivruh.jpg",
-        "Images/Chernivruh2.jpg",
         "Images/zlatnimostove.jpg",
-        "Images/zlatnimostove2.jpg",
         "Images/Boyanawaterfall.jpg",
         "Images/boyanachurch.jpg",
         "Images/Bulgarian_National_Museum_of_History.jpg",
-        "Images/Bulgarian_National_Museum_of_History2.jpg",
-        "Images/Bulgarian_National_Museum_of_History3.jpg",
         "Images/pernikmines.jpg",
-        "Images/pernikmines2.jpg",
         "Images/pernikkrepost.jpg", 
         "Images/radomirmuseum.jpg",
-        "Images/radomirmuseum2.jpg",
         "Images/svdimitarradomir.jpg",
         "Images/goloburdo.jpg",
         "Images/svvrach.jpg",
-        "Images/svvrach2.jpg",
         "Images/bazilikjoan.jpg",
         "Images/rupite.jpg",
-        "Images/rupite2.jpg",
         "Images/vangahome.jpg",
         "Images/svpetrarka.jpg",
         "Images/sintika.jpg",
         "Images/kleptuza.jpg",
         "Images/museumvelingrad.jpg",
-        "Images/museumvelingrad2.jpg"
     ]
 };
 

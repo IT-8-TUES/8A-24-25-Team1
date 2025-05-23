@@ -8,8 +8,8 @@
 }
 
 .image-gallery img {
-    width: 60%;
-    height: auto;
+    width: 20em;
+    height: 20em;
     border-radius: 0.5em;
     box-shadow: 0 0.3125em 0.625em rgba(0, 0, 0, 0.1);
 }
@@ -27,13 +27,6 @@
 
 .image-gallery button:hover {
     background-color: forestgreen;
-}
-.image-gallery img {
-  width: 60%;
-  height: auto;
-  border-radius: 0.5em;
-  box-shadow: 0 0.3125em 0.625em rgba(0, 0, 0, 0.1);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .image-gallery img:hover {
