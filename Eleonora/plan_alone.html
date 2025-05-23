@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="plan_alone.css">
-<!-- Вкарвам flatpickr-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <title>Планирай сам</title>
 </head>
@@ -14,8 +13,10 @@
         <h1>Планирай сам</h1>
         <nav>
             <a href="../Alex/index.html">Начало</a>
+            <a href="../Eleonora/plan_alone.html">Планирай сам</a>
             <a href="../Alex/readyTrips.html">Готови екскурзии</a>
             <a href="../Teodor/recomondation.html">Хотели и ресторанти</a>
+            <a href = "../Teodor/contacts.html">Контакти</a>
         </nav>
     </header>
     <br>
@@ -347,10 +348,10 @@
         <div id = "footer-nav">
             <div class = "link-group">
                 <a href = "../Alex/index.html" class = "main-link">Начало</a>
-                <a href = "../Eleonora/Northwest">Северозападна България</a>
+                <a href = "../Eleonora/Northwest.html">Северозападна България</a>
                 <a href = "../Eleonora/Northeast.html">Североизточна България</a>
-                <a href = "../Teodor/Southeast">Югоизточна България</a>
-                <a href = "../Alex/Southeast.html">Югозападна България</a>
+                <a href = "../Teodor/Southeast.html">Югоизточна България</a>
+                <a href = "../Alex/Southwest.html">Югозападна България</a>
             </div>
             <div class = "link-group">
                 <a href = "../Eleonora/plan_alone.html" class = "main-link">Планирай сам</a>
@@ -374,18 +375,15 @@
     <script src="plan_alone.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/bg.js"></script> 
-    <!-- Зарежда българския езиков файл за Flatpickr -->
     <script>
         config = {
             altInput: true,
             altFormat: "F j, Y",
             dateFormat: "Y-m-d",
             locale: "bg",
-            //Мой формат за Date picker
         }
 
-        flatpickr("input[type=datetime-local]", config);
-        // Свързам flatpickr с datetime-local input-ите
+        flatpickr("input[type=datetime-local]", config);    
     </script>
         
 </body>

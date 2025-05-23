@@ -1,7 +1,7 @@
 .tabs {
     display: flex;
     flex-wrap: wrap;
-    max-width: 200em;
+    max-width: 80%;
     margin: 3em auto;
     padding: 1em;
 }
@@ -30,6 +30,14 @@
 
 .tabs input[type="radio"]:checked + label {
     background: #e2e2e2;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #Email input[type="email"] {
@@ -95,6 +103,7 @@ textarea {
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 100em;
     padding: 0.75em;
     border: 1px solid #ccc;
     border-radius: 0.5em;
@@ -112,4 +121,43 @@ button[type="submit"] {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+#submit-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#rest1Img{
+    display: none;
+}
+
+#rest2Img{
+    display: none;
+}
+
+#hotel1Img{
+    display: none;
+}
+
+#hotel2Img{
+    display: none;
+}
+
+#Dropdown{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: flex-start;
+    margin: 0 0 0 10%;
+}
+
+.enter-location {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }

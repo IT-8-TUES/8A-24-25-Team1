@@ -91,6 +91,10 @@ function printHotels() {
   
   let selectedCity = document.querySelector('.selectCity').value;
 
+  document.getElementById("rest1Img").style.display="block";
+  document.getElementById("rest2Img").style.display="block";
+  document.getElementById("hotel1Img").style.display="block";
+  document.getElementById("hotel2Img").style.display="block";
 
   switch(selectedCity) {
     case 'Видин':

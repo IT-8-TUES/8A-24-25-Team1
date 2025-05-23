@@ -16,56 +16,67 @@
             <a href="../Alex/">Готови екскурзии</a>
             <a href="recomondation.html">Хотели и ресторанти</a>
             <a href="contacts.html">Свържете се с нас</a>
-        </nav>
+         </nav>    
     </header>
     <br>
-    <label>Избери регион</label>
-    <br>
-    <select id="region" onchange="region();">
-        <option selected disabled hidden value="no-value"> Избери регион </option>
-        <option value="Region1">Северозападна България</option>
-        <option value="Region2">Североизточна България</option>
-        <option value="Region3">Югозападна България</option>
-        <option value="Region4">Югоизточна България</option>
-    </select>
-    <br>
-    <label>Избери град</label>
-    <br>
-    <select class="selectCity"  onchange="
-    printHotels();">
-        <option selected disabled hidden> Избери град </option>
-        <option class="city1" value="city1"></option>
-        <option class="city2" value="city2"></option>
-        <option class="city3" value="city3"></option>
-        <option class="city4" value="city4"></option>
-        <option class="city5" value="city5"></option>
-    </select>
-
-        <div class="tabs">
+    <div id="Dropdown">
+        <div class = "enter-location">
+            <label>Избери регион</label>
+            <select id="region" onchange="region();">
+                <option selected disabled hidden value="no-value"> Избери регион </option>
+                <option value="Region1">Северозападна България</option>
+                <option value="Region2">Североизточна България</option>
+                <option value="Region3">Югозападна България</option>
+                <option value="Region4">Югоизточна България</option>
+            </select>
+        </div>
+        <br>
+        <div class = "enter-location">
+            <label>Избери град</label>
+            <select class="selectCity"  onchange="printHotels();">
+                <option selected disabled hidden> Избери град </option>
+                <option class="city1" value="city1"></option>
+                <option class="city2" value="city2"></option>
+                <option class="city3" value="city3"></option>
+                <option class="city4" value="city4"></option>
+                <option class="city5" value="city5"></option>
+            </select>
+        </div>
+    </div>
+            <div class="tabs">
             <input type="radio" id="tabRest" name="tabs" checked="checked">
             <label for="tabRest">Ресторанти</label>
             <div class="tab">
                 <h2 id="rest1"></h2>
-                <iframe id="rest1Maps"  width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <img id = "rest1Img" alt="rest1" width="500" height="500" />
-     
+                <div class = "tab-content">
+                    <img id = "rest1Img"  alt="rest1" width="500" height="500" />
+                    <iframe id="rest1Maps"  width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
                 <h2 id="rest2"></h2>
-                <iframe id="rest2Maps"  width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <img id = "rest2Img" alt="rest2" width="500" height="500"/>
+                <div class = "tab-content">
+                     <img id = "rest2Img" alt="rest2" width="500" height="500"/>
+                    <iframe id="rest2Maps"  width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
 
             <input type="radio" id="tabHotel" name="tabs">
             <label for="tabHotel">Хотели</label>
             <div class="tab">
                 <a id="hotel1link" href="" target="_blank"><h2 id="hotel1"></h2></a>
-                <iframe id="hotel1Maps"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <img id = "hotel1Img" alt="Hotel1" style="width: 40em; height: auto;" />
-                
+                <div class = "tab-content">
+                    <img id = "hotel1Img" alt="Hotel1" width="500" height="500" />
+                    <iframe id="hotel1Maps"  width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
                 <a id="hotel2link" href="" target="_blank"><h2 id="hotel2"></h2></a>
-                <iframe id="hotel2Maps"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
-                <img id = "hotel2Img" alt="Hotel2" style="width: 40em; height: auto;" />
+                <div class = "tab-content">
+                    <img id = "hotel2Img" alt="Hotel2" width="500" height="500" />
+                    <iframe id="hotel2Maps"  width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+                </div>
+                
             </div>
         </div>
+
         <footer>
         <div id = "footer-nav">
             <div class = "link-group">
