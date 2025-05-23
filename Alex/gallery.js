@@ -43,8 +43,8 @@ const imageSets = {
         "Images/Excursion6-1.jpg",
         "Images/Excursion6-2.jpg",
         "Images/Excursion6-3.jpg"
-    ],
-    "Southeast": [
+    ],  
+    "Southwest": [
         "Images/Vitosha.jpg",
         "Images/Chernivruh.jpg",
         "Images/zlatnimostove.jpg",
