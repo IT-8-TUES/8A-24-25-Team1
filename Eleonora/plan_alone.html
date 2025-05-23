@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="plan_alone.css">
-<!-- Вкарвам flatpickr-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <title>Планирай сам</title>
 </head>
@@ -376,18 +375,15 @@
     <script src="plan_alone.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/bg.js"></script> 
-    <!-- Зарежда българския езиков файл за Flatpickr -->
     <script>
         config = {
             altInput: true,
             altFormat: "F j, Y",
             dateFormat: "Y-m-d",
             locale: "bg",
-            //Мой формат за Date picker
         }
 
-        flatpickr("input[type=datetime-local]", config);
-        // Свързам flatpickr с datetime-local input-ите
+        flatpickr("input[type=datetime-local]", config);    
     </script>
         
 </body>

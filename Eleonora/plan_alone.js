@@ -1,4 +1,3 @@
-// Функция за изчисляване на дните почивка
 function holidayTime() {
     let days = 0;
     const startDate = new Date(document.querySelector('#start-date-input').value);
@@ -24,8 +23,6 @@ function holidayTime() {
 
     return days;
 }
-
-// Функция за определяне на региона и извеждане на името на екскурзията
 
 let regionName = '';
 function region() {
@@ -58,7 +55,6 @@ function region() {
     }
 
 }
-// Функция за показване на елемнтите - дни
 
 function showingDays(days) {
     let i = 1;
@@ -67,8 +63,6 @@ function showingDays(days) {
         document.getElementById(`day${i}`).style.display = "block";
     }
 }
-
-// Функция за определяне на градовете спрямо региона
 
 function towns() {
     console.log(regionName)
@@ -90,7 +84,6 @@ function towns() {
     displayTowns(townList);
 }
 
-//Функция за показване на градовете като опции
 
 function displayTowns(townList) {
     let i;
@@ -106,7 +99,6 @@ function displayTowns(townList) {
 
 let sights = [];
 
-//Функция за избиране на забележителности
 
 function defineSights(selectorTownValue) {
     if(regionName === 'Северозападна България') {
@@ -228,7 +220,7 @@ function defineSights(selectorTownValue) {
 }
 
 let dayNum = 0;
-// Функция за показване на забележителностите
+
 function displaySights(dayNum) {
     let selectorTownValue = document.querySelector(`#day${dayNum}-town`).value;
     defineSights(selectorTownValue);
@@ -245,7 +237,6 @@ document.addEventListener("DOMContentLoaded", () =>  {
     }
 });
 
-// Функция за деактивиране на селектора, когато няма избран град
 function valueSelector(dayNum) {
     const sightsSelect = document.getElementById(`day${dayNum}-sights`);
     const townSelectorValue = document.getElementById(`day${dayNum}-town`).value;
@@ -261,7 +252,7 @@ function valueSelector(dayNum) {
 }
 
 let count = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-// Функция за добавяне на градове
+
 function addSight(dayNum) {
     let i;
     const townSelectorValue = document.getElementById(`day${dayNum}-town`).value;
@@ -313,7 +304,6 @@ function addSight(dayNum) {
 }
 }
 
-// Функция за премахване на градове
 function removeSight(dayNum) {
     let i;
     const townSelectorValue = document.getElementById(`day${dayNum}-town`).value;
