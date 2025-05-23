@@ -44,7 +44,7 @@ const imageSets = {
         "Images/Excursion6-2.jpg",
         "Images/Excursion6-3.jpg"
     ],
-    "Southwest": [
+    "Southeast": [
         "Images/Vitosha.jpg",
         "Images/Chernivruh.jpg",
         "Images/zlatnimostove.jpg",
@@ -64,7 +64,27 @@ const imageSets = {
         "Images/sintika.jpg",
         "Images/kleptuza.jpg",
         "Images/museumvelingrad.jpg",
-    ]
+    ],
+    "Northwest": [
+            "../Eleonora/Images/Северозападна България\Видин\баба-вида.jpg",
+            "../Eleonora/Images/Северозападна България\Видин\Калето.jpg",
+            "../Eleonora/Images/Северозападна България\Видин\Видинската синагога.jpeg",
+            "../Eleonora/Images/Северозападна България\Видин\Свет-Димитър-Катедрален-храм.jpg",
+            "../Eleonora/Images/Северозападна България\Видин\Дунавски-парк.png",
+            "../Eleonora/Images/Северозападна България\Белоградчик\Белоградчишките-скали.jpg",
+            "../Eleonora/Images/Северозападна България\Белоградчик\Магурата.jpg",
+            "../Eleonora/Images/Северозападна България\Белоградчик\Белоградчишката-крепост.jpg.jpg",
+            "../Eleonora/Images/Северозападна България\Берковица\Къща-музей на Иван Вазов – Берковица.jpg",
+            "../Eleonora/Images/Северозападна България\Берковица\Часовниковата кула на Берковица.jpg",
+            "../Eleonora/Images/Северозападна България\Берковица\Клисурски-манастир.jpg",
+            "../Eleonora/Images/Северозападна България\Берковица\Връх Ком.jpeg",
+            "../Eleonora/Images/Северозападна България\Чипровци\Чипровският манастир „Св. Иван Рилски“.jpg",
+            "../Eleonora/Images/Северозападна България\Чипровци\Исторически музей – Чипровци.jpg",
+            "../Eleonora/Images/Северозападна България\Чипровци\Природен парк „Стара планина“.jpg",
+            "../Eleonora/Images/Северозападна България\Чипровци\Чипровски водопад.jpg",
+        ],
+    
+
 };
 
 const pageName = window.location.pathname.split("/").pop().split(".")[0]; 
