@@ -64,9 +64,11 @@ function regionSelect() {
         })
     ) || [];
 
-    output.textContent = filteredTrips.length > 0 
-        ? `Препоръчани екскурзии за ${region}:`
-        : "Няма екскурзии на тези дати. Ето всички екскурзии за този регион:";
+    if (filteredTrips.length > 0) {
+        output.textContent = `Препоръчани екскурзии за ${region}:`;
+    } else {
+        output.textContent = "Няма екскурзии на тези дати. Ето всички екскурзии за този регион:";
+    }
 
     tripList.innerHTML = (filteredTrips.length > 0 ? filteredTrips : trips[region]).map(trip => `
         <div>

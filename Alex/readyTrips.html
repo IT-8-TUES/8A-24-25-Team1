@@ -14,9 +14,10 @@
         <div class="menu">
             <h1>Готови екскурзии</h1>
             <nav>
-                <a href="#">#</a>
-                <a href="#">#</a>
-                <a href="#">#</a>
+                <a href="index.html">Начало</a>
+                <a href="../Eleonora/plan_alone.html">Планирай сам</a>
+                <a href="readyTrips.html">Готови екскурзии</a>
+                <a href="../Teodor/recomondation.html">Хотели и ресторанти</a>
             </nav>
         </div>
     </header>
@@ -35,17 +36,17 @@
             <br>
             <div class="enter-region">
                 <label class = "region-label">Регион</label>
-                <select id="region" >
+                <select id="region">
                     <option value = "" disabled selected hidden>Изберете регион</option>
-                    <option value="Northwest">Северозападна България</option>
-                    <option value="Northeast">Североизточна България</option>
-                    <option value="Southwest">Югозападна България</option>
-                    <option value="Southeast">Югоизточна България</option>
+                    <option value="Северозападна България">Северозападна България</option>
+                    <option value="Североизточна България">Североизточна България</option>
+                    <option value="Югозападна България">Югозападна България</option>
+                    <option value="Югозападна България">Югоизточна България</option>
                 </select>
                 </div>
                 <div id = "submit-container">
                 <button id = "submit-button" onclick = "        
-                    region();
+                    regionSelect()
                     ">Потвърди</button>
                 </div>
             <div class = "planning-trip">
@@ -57,10 +58,9 @@
         <div id = "footer-nav">
             <div class = "link-group">
                 <a href = "../Alex/index.html" class = "main-link">Начало</a>
-                <a href = "../Eleonora/Northwest">Северозападна България</a>
+                <a href = "../Eleonora/Northwest.html">Северозападна България</a>
                 <a href = "../Eleonora/Northeast.html">Североизточна България</a>
-                <a href = "../Teodor/Southeast">Югоизточна България</a>
-                <a href = "../Alex/Southeast.html">Югозападна България</a>
+                <a href = "../Teodor/Southeast.html">Югоизточна България</a>
             </div>
             <div class = "link-group">
                 <a href = "../Eleonora/plan_alone.html" class = "main-link">Планирай сам</a>
@@ -81,6 +81,8 @@
             <a href = "X.com"><img src = "../Eleonora/Images/Logos/X.png" height = '20 em' width = '20 em'></a>
         </div>
     </footer>
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/bg.js"></script>
     <!-- Зарежда българския езиков файл за Flatpickr -->
