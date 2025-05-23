@@ -32,3 +32,84 @@
     background: #e2e2e2;
 }
 
+#Email input[type="email"] {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    box-shadow: 0 0.625em 1.25em rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+#Names{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+#contactForom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 70%;
+    width: 70%;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: white;
+    box-shadow: 0 0.625em 1.25em rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+
+}
+
+#FirstName {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#LastName {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#Email{
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+textarea {
+    display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+    box-shadow: 0 0.625em 1.25em rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background-color: white;
+}
+
+button[type="submit"] {
+    padding: 0.75em 1.5em;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
