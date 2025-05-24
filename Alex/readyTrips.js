@@ -18,24 +18,28 @@ function regionSelect() {
 
     if (!region) {
         output.textContent = "Моля, въведете регион.";
+        output.style.color = "red";
         tripList.innerHTML = "";
         return;
     }
 
     if (!startDate) {
         output.textContent = "Моля, въведете начална дата.";
+        output.style.color = "red";
         tripList.innerHTML = "";
         return;
     }
 
     if (endDate && startDate > endDate) {
         output.textContent = "Грешка: Крайната дата трябва да бъде след началната!";
+        output.style.color = "red";
         tripList.innerHTML = "";
         return;
     }
 
     if (endDate && startDate === endDate) {
         output.textContent = "Грешка: Началната и крайната дата не могат да бъдат еднакви!";
+        output.style.color = "red";
         tripList.innerHTML = "";
         return;
     }
@@ -58,6 +62,7 @@ function regionSelect() {
 
     if (region === "Северозападна България" || region === "Североизточна България" || region === "Югоизточна България") {
         output.textContent = "Няма налични екскурзии за този регион.";
+        output.style.color = "red";
         tripList.innerHTML = "";
         return;
     }
@@ -71,8 +76,10 @@ function regionSelect() {
 
     if (filteredTrips.length > 0) {
         output.textContent = `Препоръчани екскурзии за ${region}:`;
+        output.style.color = "black";
     } else {
         output.textContent = "Няма екскурзии на тези дати. Ето всички екскурзии за този регион:";
+        output.style.color = "red";
     }
 
     tripList.innerHTML = (filteredTrips.length > 0 ? filteredTrips : trips[region]).map(trip => `
