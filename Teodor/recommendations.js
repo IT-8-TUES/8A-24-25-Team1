@@ -106,7 +106,7 @@ function printHotels() {
       hotel2.name = "Семеен хотел Анна-Кристина";
       hotel2.location = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2870.660163398614!2d22.88073500000001!3d43.987077000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4753795aaaaaaaab%3A0x121513e96e7e58fb!2z0KHQtdC80LXQtdC9INGF0L7RgtC10Lsg4oCe0JDQvdC90LAg0JrRgNC40YHRgtC40L3QsOKAnCDQktC40LTQuNC9!5e0!3m2!1sbg!2sbg!4v1747226383569!5m2!1sbg!2sbg";
       hotel2.img = "img/WidinHotel2.jpg";
-      hotel2.link = "https://www.booking.com/searchresults.bg.html?aid=318615&label=New_Bulgarian_BG_19114761385-34SRsx0jIztVK13WexpziQS634186712317%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55380194223%3Atidsa-321246203880%3Alp1001461%3Ali%3Adec%3Adm%3Aag19114761385%3Acmp108540745&gclid=Cj0KCQjwiqbBBhCAARIsAJSfZkYwIAR9PVLRzPvVpVYZoTJ1P8GPMmf1ScyN3BUDXbmtpPgk-Pe8mLEaAkIOEALw_wcB&highlighted_hotels=422642&redirected=1&city=-839613&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=93a6504c5e128f77887ac73532ccab87";
+      hotel2.link = "https://www.booking.com/hotel/bg/anna-kristina.bg.html?aid=318615&label=New_Bulgarian_BG_19114761385-34SRsx0jIztVK13WexpziQS634186712317%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi55380194223%3Atidsa-321246203880%3Alp1001461%3Ali%3Adec%3Adm%3Aag19114761385%3Acmp108540745&sid=93a6504c5e128f77887ac73532ccab87&dest_id=-839613&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748100959&srpvid=551f6dac66c000e5&type=total&ucfs=1&";
 
       rest1.name = "Ресторант Бонония";
       rest1.location = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2870.7150145177166!2d22.8793315!3d43.9859428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4753798530ae4697%3A0x504888736e737c29!2z0KDQtdGB0YLQvtGA0LDQvdGCINCR0L7QvdC-0L3QuNGP!5e0!3m2!1sbg!2sbg!4v1747331721981!5m2!1sbg!2sbg";
@@ -121,7 +121,7 @@ function printHotels() {
       hotel1.name = "Хотел Скалите";
       hotel1.location = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.1129173918357!2d22.6870251!3d43.625008699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47548d6e47a566b3%3A0x5625dc59f05b194f!2z0KXQvtGC0LXQuyAi0KHQutCw0LvQuNGC0LUi!5e0!3m2!1sbg!2sbg!4v1747226431078!5m2!1sbg!2sbg";
       hotel1.img = "img/BeogradchikHotel1.jpg";
-      hotel1.link = "https://www.booking.com/searchresults.bg.html?aid=318615&label=New_Bulgarian_BG_19114761385-34SRsx0jIztVK13WexpziQS634186712317%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-140566012825%3Alp1001461%3Ali%3Adec%3Adm%3Aag19114761385%3Acmp108540745&gclid=Cj0KCQjwiqbBBhCAARIsAJSfZkYA0HITW6u6I3ukwnfMYPkv7HPVFUPc3MYm0xu67lkrpiT_WaRg9akaAsPSEALw_wcB&highlighted_hotels=8689494&redirected=1&city=-832131&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=93a6504c5e128f77887ac73532ccab87";
+      hotel1.link = "https://www.booking.com/hotel/bg/khotel-skalite.bg.html?aid=318615&label=New_Bulgarian_BG_19114761385-34SRsx0jIztVK13WexpziQS634186712317%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-140566012825%3Alp1001461%3Ali%3Adec%3Adm%3Aag19114761385%3Acmp108540745&sid=93a6504c5e128f77887ac73532ccab87&dest_id=-832131&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748100997&srpvid=b3c96dc1d31d02e2&type=total&ucfs=1&";
       
       hotel2.name = 'Hotel Fort o Bel';
       hotel2.location = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.1459618365725!2d22.676815200000014!3d43.6243209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47548dd36894cc95%3A0x4b43847276870cf0!2sHotel%20%22Fort%20o%20Bel%22!5e0!3m2!1sbg!2sbg!4v1747226519217!5m2!1sbg!2sbg";
@@ -181,6 +181,7 @@ function printHotels() {
       hotel1.name = "Комплекс Радецки";
       hotel1.location = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.793158064367!2d23.676154!3d43.7979049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40acae8d5028146f%3A0x5bf01cf6a60301a5!2z0JrQvtC80L_Qu9C10LrRgSAi0KDQsNC00LXRhtC60Lgi!5e0!3m2!1sbg!2sbg!4v1747232709896!5m2!1sbg!2sbg";
       hotel1.img = "img/KozloduiHotel1.jpg";
+      hotel1.link = "https://www.booking.com/hotel/bg/komplieks-radietski.bg.html?aid=323176&label=komplieks-radietski-4GKppY1iimUPHfnOmLj2GwS625965982959%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-350301052455%3Alp9047691%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YTQUGSsRwx9_PrTsz47A96U&sid=93a6504c5e128f77887ac73532ccab87&dest_id=-835455&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1748101141&srpvid=03ce6e07d2ea0583&type=total&ucfs=1&";
       
       hotel2.name = "By The River Hotel";
       hotel2.location = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.6016788439683!2d23.964416399999998!3d43.7396009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aca27f024a6117%3A0x93488ea7969a807a!2sBy%20The%20River%20Hotel!5e0!3m2!1sbg!2sbg!4v1747232777770!5m2!1sbg!2sbg";
@@ -482,7 +483,7 @@ function printHotels() {
       hotel1.img = "img/NesebarHotel1.jpg";
       hotel1.link = "https://www.booking.com/hotel/bg/nessebar-palace.bg.html?aid=356980&label=gog235jc-1FCAsoF0IPbmVzc2ViYXItcGFsYWNlSANYA2gXiAEBmAEDuAEXyAEM2AEB6AEB-AECiAIBqAIDuAKPpLbBBsACAdICJDcxMWU5ODQ0LWQ5MmQtNGQ4YS1hZjg1LWFiMWUyNWY0OGFmOdgCBeACAQ&sid=93a6504c5e128f77887ac73532ccab87&dest_id=-836658&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747816985&srpvid=f0813d48e6220475&type=total&ucfs=1&";
       
-      hotel2.name = "Хотел Свети Стефан";
+      hotel2.name = "Boutique Hotel St. Stefan";
       hotel2.location = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10217.33246483494!2d27.728276464842047!3d42.65799718687956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a69f5fef7fa7e7%3A0x518d4ba80158b145!2z0YXQvtGC0LXQuyDigJ7QodCy0LXRgtC4INCh0YLQtdGE0LDQveKAnA!5e0!3m2!1sbg!2sbg!4v1747329611505!5m2!1sbg!2sbg";
       hotel2.img = "img/NesebarHotel2.jpg";
       hotel2.link = "https://www.booking.com/hotel/bg/st-stefan.bg.html?aid=356980&label=gog235jc-1FCAsoF0IJc3Qtc3RlZmFuSANYA2gXiAEBmAEDuAEXyAEM2AEB6AEB-AECiAIBqAIDuAL8pbbBBsACAdICJDViMDQ3NTc1LTU3OGItNGE4ZC1iNThlLWRmNjdlNDc3ODkxNdgCBeACAQ&sid=93a6504c5e128f77887ac73532ccab87&dest_id=-836658&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1747817222&srpvid=b3c93dbee98512c6&type=total&ucfs=1&";
@@ -506,7 +507,7 @@ function printHotels() {
   document.getElementById('hotel2').textContent = hotel2.name;
   document.getElementById('hotel2Maps').src = hotel2.location;
   document.getElementById('hotel2Img').src = hotel2.img;
-  document.getElementById('hotel1link').src = hotel1.link;
+  document.getElementById('hotel2link').href = hotel2.link;
 
   document.getElementById('rest1').innerText = rest1.name;
   document.getElementById('rest1Maps').src = rest1.location;
