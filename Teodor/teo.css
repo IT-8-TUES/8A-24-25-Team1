@@ -111,6 +111,7 @@ textarea {
     box-shadow: 0 0.625em 1.25em rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     background-color: white;
+    height: 10em;
 }
 
 button[type="submit"] {
