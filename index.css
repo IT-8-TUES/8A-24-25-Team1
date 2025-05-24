@@ -241,7 +241,7 @@ footer {
 
 a {
   color:black;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: lighter;
 }
 
@@ -254,6 +254,7 @@ a:hover {
 
 .main-link {
   font-size: large;
+  font-weight: bold;
 }
 
 #social-media {
