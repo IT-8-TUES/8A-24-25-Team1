@@ -47,13 +47,28 @@ nav a:hover {
   }
   
   .trip-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: fit-content;
+    gap: 1.5em;
     margin-top: 1.5em;
     padding: 1em;
     background-color: rgba(240, 240, 240, 0.8);
     border-left: 0.5em solid #3f635d;
     border-radius: 0.5em;
   }
-  
+
+  .info-sight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
 
   .trip-image {
     height: 22em;

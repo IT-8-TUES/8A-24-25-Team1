@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Alex/index.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../Alex/gallery.css">
+    <script src="../Alex/gallery.js" defer></script>
     <link rel="stylesheet" href="../Alex/excursion.css">
     <link rel="icon" type="image/x-icon" href="../Logo.jpg">
     <title>Югоизточна България</title>
@@ -195,6 +197,15 @@
                     <p>Археологически музей с експонати от тракийската, римската и византийската епоха. Разказва историята на древния Месемврия.</p>
                 </div>
             </div>
+
+            <div class="trip-info-gallery">
+            <h3>Снимки:</h3>
+            <div class="image-gallery">
+                <button class="prev" onclick="changeImage(-1)"><</button>
+                <img id="galleryImage" src="Images/noimage.jpg" alt="Снимки от екскурзията" height="200em" width="200em" class="image-sight">
+                <button class="next" onclick="changeImage(1)">></button>
+            </div>
+        </div>
 
     </main>
     <footer>

@@ -1,3 +1,11 @@
+.trip-info-gallery {
+    margin-top: 1.5em;
+    padding: 1em;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-left: 0.5em solid #3f635d;
+    border-radius: 0.5em;
+}
+
 .image-gallery {
     display: flex;
     align-items: center;
