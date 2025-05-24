@@ -29,17 +29,75 @@ nav {
 
 nav a {
   text-decoration: none;
-  padding: 0.625em 1.25em;
-  background-color:  #3f635d;;
-  color: white;
-  border-radius: 0.25em;
-  font-size: 1em;
-  transition: background-color 0.5s ease;
+    padding: 0.75em 1.5em;
+    background-color: #3f635d;
+    color: white;
+    border-radius: 0.25em;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
 }
 
-nav a:hover {
+nav a:hover, .dropbtn:hover {
   text-decoration: none;
-  background-color:  #2f4945;
+  background-color: #2f4945;
+}
+
+.dropbtn {
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    background-color: #3f635d;
+    color: white;
+    border-radius: 0.25em;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.dropdown:hover .arrow {
+    transform: rotate(90deg); /* Rotates down */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3f635d;
+    min-width: 12.5em;
+    box-shadow: 0px 0.5em 1em rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 0.25em;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    display: block;
+    text-align: left; 
+    padding: 0.75em 1em;
+}
+
+.dropdown-content a:hover {
+    background-color: #2f4945;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
