@@ -1,69 +1,53 @@
 const galleryImage = document.getElementById("galleryImage");
+const imageLocation = document.getElementById("imageLocation");
 let currentIndex = 0;
 
 const imageSets = {
     "excursion": [
-        "Images/Image1.jpg",
-        "Images/Image2.jpg",
-        "Images/Image3.jpg",
-        "Images/Image4.jpg"
+        { src: "Images/Image1.jpg", location: "Място 1" },
+        { src: "Images/Image2.jpg", location: "Място 2" },
+        { src: "Images/Image3.jpg", location: "Място 3" },
+        { src: "Images/Image4.jpg", location: "Място 4" }
     ],
-    "excursion1": [
-        "Images/haskovo.jpg",
-        "Images/varna.jpg",
-        "Images/Melnik.jpg"
-    ],
-    "excursion2": [
-        "Images/Excursion2-1.jpg",
-        "Images/Excursion2-2.jpg",
-        "Images/Excursion2-3.jpg"
-    ],
-    "excursion3": [
-        "Images/Excursion3-1.jpg",
-        "Images/Excursion3-2.jpg",
-        "Images/Excursion3-3.jpg"
-    ],
+
     "excursion4": [
-        "Images/svvrach.jpg",
-        "Images/rupite.jpg",
-        "Images/vangahome.jpg",
-        "Images/svpetrarka.jpg",
-        "Images/sintika.jpg",
-        "Images/kleptuza.jpg"
+        { src: "Images/svvrach.jpg", location: "Св. Врач" },
+        { src: "Images/rupite.jpg", location: "Рупите" },
+        { src: "Images/vangahome.jpg", location: "Дом на Ванга" },
+        { src: "Images/svpetrarka.jpg", location: "Св. Петка" },
+        { src: "Images/sintika.jpg", location: "Синтика" },
+        { src: "Images/kleptuza.jpg", location: "Клептуза" }
     ],
+
     "excursion5": [
-        "Images/rilskimanastir.jpg",
-        "Images/rilskiezera.jpg",
-        "Images/malovica.jpg",
-        "Images/vihren.jpg",
-        "Images/popovoezero.jpg",
-        "Images/baikushevamura.jpg"
+        { src: "Images/rilskimanastir.jpg", location: "Рилски манастир" },
+        { src: "Images/rilskiezera.jpg", location: "Рилски езера" },
+        { src: "Images/malovica.jpg", location: "Мальовица" },
+        { src: "Images/vihren.jpg", location: "Вихрен" },
+        { src: "Images/popovoezero.jpg", location: "Попово езеро" },
+        { src: "Images/baikushevamura.jpg", location: "Байкушева мура" }
     ],
-    "excursion6": [
-        "Images/Excursion6-1.jpg",
-        "Images/Excursion6-2.jpg",
-        "Images/Excursion6-3.jpg"
-    ],  
+
     "Southwest": [
-        "Images/Vitosha.jpg",
-        "Images/Chernivruh.jpg",
-        "Images/zlatnimostove.jpg",
-        "Images/Boyanawaterfall.jpg",
-        "Images/boyanachurch.jpg",
-        "Images/Bulgarian_National_Museum_of_History.jpg",
-        "Images/pernikmines.jpg",
-        "Images/pernikkrepost.jpg", 
-        "Images/radomirmuseum.jpg",
-        "Images/svdimitarradomir.jpg",
-        "Images/goloburdo.jpg",
-        "Images/svvrach.jpg",
-        "Images/bazilikjoan.jpg",
-        "Images/rupite.jpg",
-        "Images/vangahome.jpg",
-        "Images/svpetrarka.jpg",
-        "Images/sintika.jpg",
-        "Images/kleptuza.jpg",
-        "Images/museumvelingrad.jpg",
+        { src: "Images/Vitosha.jpg", location: "Витоша" },
+        { src: "Images/Chernivruh.jpg", location: "Черни връх" },
+        { src: "Images/zlatnimostove.jpg", location: "Златни мостове" },
+        { src: "Images/Boyanawaterfall.jpg", location: "Боянски водопад" },
+        { src: "Images/boyanachurch.jpg", location: "Боянска църква" },
+        { src: "Images/Bulgarian_National_Museum_of_History.jpg", location: "Национален музей на България" },
+        { src: "Images/pernikmines.jpg", location: "Перник - Мини" },
+        { src: "Images/pernikkrepost.jpg", location: "Пернишка крепост" },
+        { src: "Images/radomirmuseum.jpg", location: "Исторически музей - Радомир" },
+        { src: "Images/svdimitarradomir.jpg", location: "Св. Димитър - Радомир" },
+        { src: "Images/goloburdo.jpg", location: "Голобърдо" },
+        { src: "Images/svvrach.jpg", location: "Св. Врач" },
+        { src: "Images/bazilikjoan.jpg", location: "Базилика на Йоан" },
+        { src: "Images/rupite.jpg", location: "Рупите" },
+        { src: "Images/vangahome.jpg", location: "Дом на Ванга" },
+        { src: "Images/svpetrarka.jpg", location: "Св. Петка" },
+        { src: "Images/sintika.jpg", location: "Синтика" },
+        { src: "Images/kleptuza.jpg", location: "Клептуза" },
+        { src: "Images/museumvelingrad.jpg", location: "Музей - Велинград" }
     ],
 
         "Northwest": [
@@ -133,7 +117,6 @@ const imageSets = {
 };
 
 const pageName = window.location.pathname.split("/").pop().split(".")[0]; 
-
 const images = imageSets[pageName];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -148,7 +131,7 @@ function changeImage(direction) {
 }
 
 function updateImage() {
-    galleryImage.src = images[currentIndex];
+    galleryImage.src = images[currentIndex].src;
+    imageLocation.textContent = `${images[currentIndex].location}`; 
     galleryImage.style.opacity = "1";
 }
-

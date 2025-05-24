@@ -41,3 +41,13 @@
 .image-gallery img:hover {
   transform: scale(1.02);
 }
+
+#imageLocation {
+    display: block; 
+    width: 25%; 
+    margin: 0.5em auto; 
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1em;
+    color: #333;
+}
