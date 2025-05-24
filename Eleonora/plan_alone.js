@@ -50,6 +50,7 @@ function region() {
 
     if(days > 0 && regionName !== '') {
         document.getElementById('excursion-name').innerText = `${days}-дневна екскурзия в ${regionName}`;
+        hidingDays();
         showingDays(days);
         towns();
     }
@@ -58,9 +59,17 @@ function region() {
 
 function showingDays(days) {
     let i = 1;
-
+    
     for(i = 1; i <= days; i++) {
         document.getElementById(`day${i}`).style.display = "block";
+    }
+}
+
+function hidingDays() {
+    let i = 1;
+    
+    for(i = 1; i <= 10; i++) {
+        document.getElementById(`day${i}`).style.display = "none";
     }
 }
 
@@ -266,7 +275,7 @@ function addSight(dayNum) {
         newSightSelector.id = `day${dayNum}-sights${count[dayNum-1]}`;
 
         const labelSight = document.createElement("label");
-        labelSight.textContent = "Забележителност: ";
+        labelSight.textContent = "Забележителност ";
         labelSight.id = `day${dayNum}-label${count[dayNum-1]}`;
 
         const newLine = document.createElement("br");

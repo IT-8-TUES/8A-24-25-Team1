@@ -212,11 +212,6 @@ button:hover {
     background-color: #2e4742;
 }
 
-main {
-  min-height: fit-content;
-  margin-bottom: -15em;
-}
-
 footer {
   display: flex;
   flex-direction: row;
