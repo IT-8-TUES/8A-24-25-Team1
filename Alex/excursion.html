@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Екскурзия</title>
     <link rel="stylesheet" href="excursion.css">
+    <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="../index.css">
     <script src="gallery.js" defer></script>
 </head>
 <body>
@@ -26,14 +28,14 @@
         <p>Нощувки: <span id="hotels"></span></p>
         <p>Продължителност: <span id="duration">---</span></p>
         <p>Цена: <span id="price">---</span></p>
-        
-        <button id="bookTrip">Резервирай</button>
         <br><br>
-        <div class="image-gallery">
-            <button class="prev" onclick="changeImage(-1)"><</button>
-            <img id="galleryImage" src="Images/noimage.jpg" alt="Снимки от екскурзията">
-            <button class="next" onclick="changeImage(1)">></button>
-        </div>
+            <h3>Галерия:</h3>
+            <div class="image-gallery">
+                <button class="prev" onclick="changeImage(-1)"><</button>
+                <img id="galleryImage" src="Images/noimage.jpg" alt="Снимки от екскурзията" height="200em" width="200em" class="image-sight">
+                <button class="next" onclick="changeImage(1)">></button>
+            </div>
+            <p id="imageLocation">Локация: Неизвестна</p>
 
         <div class="trip-info">
             <h3>Информация за екскурзията:</h3>
