@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 body {
@@ -152,7 +152,7 @@ nav a:hover, .dropbtn:hover {
     align-items: flex-start;
     align-content: flex-start;
     gap:8.5%;
-    margin:4px;
+    margin:0.25em;
 } 
 
 #end-date {
@@ -163,7 +163,7 @@ nav a:hover, .dropbtn:hover {
     align-items: flex-start;
     align-content: flex-start;
     gap:8.5%;
-    margin:4px;
+    margin:0.25em;
 }
 
 .enter-region {
