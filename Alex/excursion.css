@@ -2,7 +2,11 @@ html {
   font-size: 16px;
 }
 
-body { margin: 0; font-family: 'Optima', sans-serif; background-color: whitesmoke; }
+body { 
+  margin: 0; 
+  font-family: 'Optima', sans-serif; 
+  background-color: whitesmoke; 
+}
 
 .menu {
   background-color: #3f635d;
