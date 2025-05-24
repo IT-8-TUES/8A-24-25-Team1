@@ -19,35 +19,6 @@ body {
   gap: 1em;
 }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
-  margin-top: 1.25em;
-}
-
-nav a {
-  text-decoration: none;
-    padding: 0.75em 1.5em;
-    background-color: #3f635d;
-    color: white;
-    border-radius: 0.25em;
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: background-color 0.5s ease;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-}
-
-nav a:hover, .dropbtn:hover {
-  text-decoration: none;
-  background-color: #2f4945;
-}
-
 .dropbtn {
     text-decoration: none;
     padding: 0.75em 1.5em;
